@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --brand-navy: #2d4a8a;
+  --brand-blue: #3f73d8;
+  --brand-blue-hover: #3568c7;
 }
 
 @theme inline {
@@ -12,15 +15,95 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background: #ffffff;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto max-w-[1400px];
+  }
+
+  .section-padding {
+    @apply px-6 py-20 md:px-10 md:py-28;
+  }
+
+  .grid-bg {
+    background-color: #ffffff;
+    background-image:
+      linear-gradient(to right, rgba(90, 124, 235, 0.07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(90, 124, 235, 0.07) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 ease-out hover:-translate-y-1.5 hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)];
+  }
+
+  .panel-hover {
+    @apply transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-[0_28px_80px_rgba(0,0,0,0.12)];
+  }
+
+  .btn-waitlist {
+    @apply inline-flex cursor-pointer items-center gap-4 rounded-full bg-[#3F73D8] px-8 py-4 text-xl font-medium text-white shadow-lg transition-all duration-300 hover:scale-[1.03] hover:bg-[#3568c7] hover:shadow-xl active:scale-[0.98];
+  }
+
+  .btn-gradient {
+    @apply inline-flex cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-[#3F73D8] to-[#6B9AE8] font-medium text-white shadow-md transition-all duration-300 hover:scale-[1.03] hover:brightness-110 hover:shadow-lg active:scale-[0.98];
+  }
+
+  .nav-link {
+    @apply transition-colors duration-200 hover:text-[#2D4A8A];
+  }
+
+  .nav-link-active {
+    @apply text-[#1a1a1a];
+  }
+
+  .nav-link-inactive {
+    @apply text-[#666666];
+  }
+
+  .input-underline {
+    @apply w-full border-0 border-b border-[#E5E7EB] bg-transparent pb-3 pt-2 text-[15px] text-black outline-none transition-colors duration-200 placeholder:text-[#9ca3af] focus:border-[#3F73D8] hover:border-[#c5d0e6];
+  }
+}
+
+.ticker-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticker-wrapper:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 18s linear infinite;
+}
+
+.ticker-item {
+  transition: opacity 0.2s ease;
+}
+
+.ticker-wrapper:hover .ticker-item:hover {
+  opacity: 0.65;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
