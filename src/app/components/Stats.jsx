@@ -9,7 +9,7 @@ export default function Stats() {
   return (
     <section id="stats" className="section-padding !py-10 md:!py-12">
       <div className="section-container">
-        <div className="rounded-[32px] bg-black px-4 py-10 md:rounded-[40px] md:px-8 md:py-12">
+
           <div className="grid grid-cols-2 gap-4 md:gap-5 lg:grid-cols-4 lg:gap-6">
             {stats.map((stat) => (
               <div
@@ -26,7 +26,7 @@ export default function Stats() {
             ))}
           </div>
         </div>
-      </div>
+
     </section>
   );
 }
