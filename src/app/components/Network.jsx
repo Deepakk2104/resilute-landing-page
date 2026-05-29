@@ -14,7 +14,7 @@ export default function Network() {
 
       <div className="section-container relative z-10 grid items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
         <div className="relative mx-auto w-full max-w-[620px] lg:order-1 lg:max-w-none">
-          <div className="panel-hover rounded-[40px] bg-[#ECECEF] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.08)] md:rounded-[48px] md:p-8">
+          <div className=" rounded-[40px]  p-6  md:rounded-[48px] md:p-8">
             <img
               src="/images/network/network-graphic.png"
               alt="Network of real-world interactions"
@@ -31,12 +31,30 @@ export default function Network() {
             Verify real-world interactions, build portable reputation, and unlock
             value from genuine participation.
           </p>
-          <button
-            type="button"
-            className="btn-gradient mt-10 px-10 py-4 text-[17px] md:px-12 md:py-[18px] md:text-[18px]"
-          >
-            Explore the Network
-          </button>
+         <button
+  type="button"
+  className="
+    mt-10
+    flex
+    h-[45px]
+    w-[173px]
+    items-center
+    justify-center
+    rounded-[11px]
+    bg-[linear-gradient(90.76deg,#2350AD_0.11%,#719AEF_99.89%)]
+    px-[10px]
+    text-[16px]
+    font-semibold
+    leading-[24px]
+    tracking-[-0.44px]
+    text-white
+    transition-all
+    duration-300
+    hover:brightness-105
+  "
+>
+  Explore the Network
+</button>
         </div>
       </div>
     </section>

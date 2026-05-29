@@ -9,12 +9,13 @@ function FormField({
 }) {
   return (
     <div className={className}>
-      <label className="text-[11px] font-bold uppercase tracking-[0.12em] text-black">
+      <label className="text-[11px] font-semibold uppercase tracking-[0.12em] text-black">
         {label}
       </label>
+
       {multiline ? (
         <textarea
-          rows={3}
+          rows={2}
           placeholder={placeholder}
           className="input-underline resize-none"
         />
@@ -31,65 +32,64 @@ function FormField({
 
 export default function Contact() {
   return (
-    <section id="contact" className="section-padding grid-bg">
-      <div className="section-container grid items-center gap-12 lg:grid-cols-[1fr_0.85fr] lg:gap-8 xl:gap-12">
-        <div>
-          <h2 className="text-[32px] font-bold leading-tight text-black md:text-[44px] lg:text-[48px]">
-            Get in touch with us
-          </h2>
+    <section id="contact" className="section-padding bg-white">
+      <div className="section-container">
+        <div className="relative overflow-hidden rounded-[32px]">
 
-          <form className="mt-10 space-y-8 md:mt-12">
-            <div className="grid gap-8 md:grid-cols-2 md:gap-10">
-              <FormField label="Name" placeholder="Your Name" />
-              <FormField label="Subject" placeholder="Choose Subject" />
-            </div>
-
-            <div className="grid gap-8 sm:grid-cols-3 md:gap-10">
-              <FormField label="Behalf of" placeholder="Personal" />
-              <FormField
-                label="Email"
-                placeholder="Email Address"
-                type="email"
-              />
-              <FormField label="Behalf of" placeholder="Personal" />
-            </div>
-
-            <div className="flex flex-col gap-8 md:flex-row md:items-end md:gap-10">
-              <FormField
-                label="Messages"
-                placeholder="Start typing here"
-                multiline
-                className="flex-1"
-              />
-              <button
-                type="submit"
-                className="btn-gradient shrink-0 px-12 py-4 text-[16px] md:px-14"
-              >
-                Submit now
-              </button>
-            </div>
-          </form>
-        </div>
-
-        <div className="relative hidden h-[480px] w-full overflow-hidden lg:block lg:h-[560px]">
+          {/* EXPORTED FIGMA BACKGROUND */}
           <Image
-            src="/images/LooperGroup.png"
+            src="/images/contact-bg.png"
             alt=""
-            fill
-            className="scale-110 object-cover object-[72%_50%] transition-transform duration-700 hover:scale-[1.12]"
-            sizes="45vw"
+            width={1600}
+            height={900}
+            className="h-auto w-full"
+            priority
           />
-        </div>
-      </div>
 
-      <div className="relative mx-auto mt-10 h-[260px] w-full max-w-[360px] overflow-hidden lg:hidden">
-        <Image
-          src="/images/LooperGroup.png"
-          alt=""
-          fill
-          className="object-cover object-[72%_50%]"
-          sizes="90vw"
-        />
+          {/* CONTENT OVERLAY */}
+          <div className="absolute inset-0 px-[7%] py-[8%]">
+
+            {/* HEADING */}
+            <h2 className="text-[32px] font-bold tracking-[-0.03em] text-black md:text-[44px]">
+              Get in touch with us
+            </h2>
+
+            {/* FORM */}
+            <form className="mt-10 max-w-[620px]">
+              <div className="grid gap-8 md:grid-cols-2 md:gap-12">
+                <FormField label="Name" placeholder="Your Name" />
+                <FormField label="Subject" placeholder="Choose Subject" />
+              </div>
+
+              <div className="mt-10 grid gap-8 md:grid-cols-3 md:gap-8">
+                <FormField label="Behalf Of" placeholder="Personal" />
+                <FormField
+                  label="Email"
+                  placeholder="Email Address"
+                  type="email"
+                />
+                <FormField label="Behalf Of" placeholder="Personal" />
+              </div>
+
+              <div className="mt-10 flex flex-col gap-8 md:flex-row md:items-end">
+                <FormField
+                  label="Messages"
+                  placeholder="Start typing here"
+                  multiline
+                  className="flex-1"
+                />
+
+                <button
+                  type="submit"
+                  className="h-[45px] w-[140px] rounded-[11px] bg-[linear-gradient(90.76deg,#2350AD_0.11%,#719AEF_99.89%)] text-[16px] font-semibold text-white shadow-[0_6px_18px_rgba(35,80,173,0.18)] transition-all duration-300 hover:scale-[1.02]"
+                >
+                  Submit now
+                </button>
+              </div>
+            </form>
+
+          </div>
+        </div>
       </div>
     </section>
   );

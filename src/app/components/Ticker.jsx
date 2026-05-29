@@ -18,7 +18,7 @@ const items = [
 
 export default function Ticker() {
   return (
-    <section className="w-full overflow-hidden border-y border-[#e5e5e5] bg-[#ECEAEA] py-5">
+    <section className="w-full overflow-hidden border-y border-[#e5e5e5]  py-5">
       <div className="ticker-wrapper">
         <div className="ticker-track">
           {[...items, ...items].map((item, index) => (

@@ -70,7 +70,7 @@ export default function HowItWorks() {
         <div className="relative mx-auto w-full max-w-[620px] lg:max-w-none">
           <div className="panel-hover rounded-[40px] bg-[#ECECEF] p-6 shadow-[0_24px_80px_rgba(0,0,0,0.08)] md:rounded-[48px] md:p-8">
             <img
-              src="/images/how-it-works/dashboard.svg"
+              src="/images/how-it-works/dashboard.png"
               alt="Reputation dashboard preview"
               className="w-full rounded-[24px] md:rounded-[28px]"
             />
