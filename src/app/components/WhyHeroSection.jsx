@@ -31,7 +31,7 @@ export default function WhyHeroSection() {
           </h1>
 
           {/* ROBOT IMAGE */}
-          <div className="relative mt-16 w-full flex-1">
+          <div className="relative mt-2 w-full flex-1">
             
             <Image
               src="/images/why-robot.png"
@@ -39,7 +39,7 @@ export default function WhyHeroSection() {
               width={1400}
               height={1200}
               priority
-              className="absolute bottom-[-120px] left-1/2 w-full max-w-[1200px] -translate-x-1/2 object-contain"
+              className="absolute bottom-[-10px] left-1/2 w-full max-w-[1200px] -translate-x-1/2 object-contain"
             />
           </div>
         </div>

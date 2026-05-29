@@ -1,14 +1,32 @@
+import Link from "next/link";
 import { FaDiscord, FaEnvelope, FaTwitter } from "react-icons/fa";
 
-const productLinks = ["Features", "How It Works", "Pricing", "Roadmap"];
-const developerLinks = [
-  "Documentation",
-  "API Reference",
-  "GitHub",
-  "Community",
+const productLinks = [
+  { label: "Features", href: "/" },
+  { label: "How It Works", href: "/how-it-works" },
+  { label: "For Merchants", href: "/for-merchants" },
+  { label: "Roadmap", href: "/about" },
 ];
-const companyLinks = ["About", "Blog", "Careers", "Contact"];
-const legalLinks = ["Privacy Policy", "Terms of Service", "Cookie Policy"];
+
+const developerLinks = [
+  { label: "Documentation", href: "#" },
+  { label: "API Reference", href: "#" },
+  { label: "GitHub", href: "#" },
+  { label: "Community", href: "#" },
+];
+
+const companyLinks = [
+  { label: "About", href: "/about-us" },
+  { label: "Blog", href: "#" },
+  { label: "Careers", href: "#" },
+  { label: "Contact", href: "/contact" },
+];
+
+const legalLinks = [
+  { label: "Privacy Policy", href: "#" },
+  { label: "Terms of Service", href: "#" },
+  { label: "Cookie Policy", href: "#" },
+];
 
 function FooterLogo() {
   return (
@@ -21,6 +39,7 @@ function FooterLogo() {
           <div className="h-3 w-[5px] rounded-full bg-white" />
         </div>
       </div>
+
       <span className="text-[28px] font-semibold tracking-wide text-white md:text-[30px]">
         Resilute
       </span>
@@ -31,16 +50,19 @@ function FooterLogo() {
 function LinkColumn({ title, links }) {
   return (
     <div>
-      <h3 className="text-[15px] font-bold text-white">{title}</h3>
+      <h3 className="text-[15px] font-bold text-white">
+        {title}
+      </h3>
+
       <ul className="mt-5 space-y-3">
         {links.map((link) => (
-          <li key={link}>
-            <a
-              href="#"
-              className="text-[14px] text-[#9ca3af] transition-colors duration-200 hover:translate-x-0.5 hover:text-white"
+          <li key={link.label}>
+            <Link
+              href={link.href}
+              className="text-[14px] text-[#9ca3af] transition-colors duration-200 hover:text-white"
             >
-              {link}
-            </a>
+              {link.label}
+            </Link>
           </li>
         ))}
       </ul>
@@ -52,12 +74,20 @@ export default function Footer() {
   return (
     <footer className="w-full bg-black px-6 py-14 md:px-10 md:py-16">
       <div className="section-container">
+        
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+          
+          {/* LOGO COLUMN */}
           <div className="lg:col-span-1">
-            <FooterLogo />
+            
+            <Link href="/">
+              <FooterLogo />
+            </Link>
+
             <p className="mt-5 max-w-[280px] text-[14px] leading-relaxed text-[#9ca3af]">
               Transforming real-world activity into portable on-chain reputation.
             </p>
+
             <div className="mt-6 flex gap-3">
               {[
                 { Icon: FaTwitter, label: "Twitter" },
@@ -81,22 +111,27 @@ export default function Footer() {
           <LinkColumn title="Company" links={companyLinks} />
         </div>
 
+        {/* BOTTOM BAR */}
         <div className="mt-14 border-t border-[#262626] pt-8 md:mt-16">
+          
           <div className="flex flex-col gap-4 text-[13px] text-[#9ca3af] md:flex-row md:items-center md:justify-between">
+            
             <p>© 2026 Resilute. All rights reserved.</p>
+
             <div className="flex flex-wrap gap-6 md:gap-8">
               {legalLinks.map((link) => (
-                <a
-                  key={link}
-                  href="#"
+                <Link
+                  key={link.label}
+                  href={link.href}
                   className="transition-colors duration-200 hover:text-white"
                 >
-                  {link}
-                </a>
+                  {link.label}
+                </Link>
               ))}
             </div>
           </div>
         </div>
+
       </div>
     </footer>
   );

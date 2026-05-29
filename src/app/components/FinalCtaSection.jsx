@@ -64,10 +64,10 @@ export default function FinalCtaSection() {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="relative flex justify-end">
+          <div className="relative flex h-full items-end justify-end">
             
             {/* GLOW */}
-            <div className="absolute bottom-20 right-20 h-[300px] w-[300px] rounded-full bg-cyan-400/20 blur-[120px]" />
+            <div className="absolute bottom-0 right-0 h-[300px] w-[300px] rounded-full bg-cyan-400/20 blur-[120px]" />
 
             <Image
               src="/images/final-robot.png"
