@@ -42,9 +42,9 @@ export default function Faq() {
           <Image
             src="/images/faq.png"
             alt="Resilute robot"
-            width={480}
-            height={480}
-            className="relative z-10 w-full max-w-[420px] object-contain transition-transform duration-500 hover:scale-[1.02]"
+            width={680}
+            height={680}
+            className="relative z-10 w-full max-w-[420px] object-contain transition-transform duration-500 "
           />
         </div>
 

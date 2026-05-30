@@ -53,9 +53,33 @@ export default function GrowthNetworkSection() {
             </p>
 
             {/* BUTTON */}
-            <button className="mt-10 rounded-xl bg-[#4D73E6] px-7 py-4 text-[16px] font-semibold text-white transition-all duration-300 hover:scale-[1.03] hover:bg-[#3762df]">
-              See how it works
-            </button>
+            <button
+  type="button"
+  className="
+    mt-10
+    flex
+    h-[45px]
+    w-[173px]
+    items-center
+    justify-center
+    rounded-[11px]
+    bg-[linear-gradient(90.76deg,#2350AD_0.11%,#719AEF_99.89%)]
+
+    px-[10px]
+
+    text-[16px]
+    font-semibold
+    leading-[24px]
+    tracking-[-0.44px]
+    text-white
+
+    transition-all
+    duration-300
+    hover:brightness-105
+  "
+>
+  See how it works
+</button>
           </div>
         </div>
       </div>

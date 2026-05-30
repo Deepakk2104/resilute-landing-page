@@ -3,14 +3,13 @@ import Image from "next/image";
 export default function WhyHeroSection() {
   return (
     <section className="px-4 py-10">
-      
-      <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb]">
+      <div className="relative overflow-hidden rounded-[42px] bg-[#F5F7FC]">
         
-        {/* SOFT BACKGROUND */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#f8f9fc] via-[#f7f8fb] to-[#eef4ff]" />
+        {/* FLAT BACKGROUND */}
+        <div className="absolute inset-0 bg-[#F5F7FC]" />
 
         {/* CONTENT */}
-        <div className="relative z-10 flex min-h-[900px] flex-col items-center px-8 pt-16 text-center md:px-14 md:pt-20">
+        <div className="relative z-10 flex min-h-[820px] flex-col items-center px-8 pt-[72px] text-center md:px-14">
           
           {/* LABEL */}
           <p className="flex items-center gap-2 text-[15px] font-medium text-black">
@@ -19,27 +18,42 @@ export default function WhyHeroSection() {
           </p>
 
           {/* HEADING */}
-          <h1 className="mt-10 text-[62px] font-medium leading-[0.92] tracking-[-0.06em] text-black md:text-[110px]">
-            
-            Physical trust is broken
+         <h1 className="mt-10 text-[62px] font-medium leading-[1.05] tracking-[-0.06em] text-black md:text-[116px]">
+  Physical trust is broken
 
-            <br />
+  <span
+    className="
+      mt-2
+      block
+      pb-4
+      bg-[linear-gradient(127deg,#2350AD_15%,rgba(35,80,173,0.35)_100%)]
+      bg-clip-text
+      italic
+      font-normal
+      text-transparent
+    "
+  >
+    We&apos;re fixing it.
+  </span>
+</h1>
 
-            <span className="italic font-normal text-[#6D88DB]">
-              We’re fixing it.
-            </span>
-          </h1>
-
-          {/* ROBOT IMAGE */}
-          <div className="relative mt-2 w-full flex-1">
-            
+          {/* ROBOT */}
+          <div className="relative mt-6 w-full flex-1">
             <Image
               src="/images/why-robot.png"
               alt="Why Resilute Robot"
               width={1400}
               height={1200}
               priority
-              className="absolute bottom-[-10px] left-1/2 w-full max-w-[1200px] -translate-x-1/2 object-contain"
+              className="
+                absolute
+                bottom-[-40px]
+                left-1/2
+                w-full
+                max-w-[1180px]
+                -translate-x-1/2
+                object-contain
+              "
             />
           </div>
         </div>

@@ -27,52 +27,54 @@ export default function FaqSection() {
 
   return (
     <section className="px-4 py-10">
-      
       <div className="relative overflow-hidden rounded-[42px]">
-        
-        {/* BACKGROUND IMAGE */}
+        {/* BACKGROUND */}
         <Image
           src="/images/faq-bg.png"
           alt=""
           fill
-          className="object-cover"
           priority
+          className="object-cover"
         />
 
-        {/* OVERLAY */}
-        <div className="relative z-10 grid min-h-[950px] items-center gap-16 px-8 py-16 md:px-14 lg:grid-cols-2">
+        {/* CONTENT */}
+        <div className="relative z-10 grid min-h-[820px] items-center gap-8 px-10 py-14 md:px-14 lg:grid-cols-[46%_54%]">
           
           {/* LEFT SIDE */}
-          <div className="relative flex items-end justify-center">
-            
+          <div className="relative h-full">
             <Image
               src="/images/faq-robot.png"
               alt="FAQ Robot"
-              width={700}
-              height={900}
-              className="w-full max-w-[620px] object-contain"
+              width={650}
+              height={850}
               priority
+              className="
+                absolute
+                bottom-0
+                left-[-40px]
+                w-[620px]
+                max-w-none
+                object-contain
+              "
             />
           </div>
 
           {/* RIGHT SIDE */}
           <div className="max-w-[760px]">
-            
-            {/* HEADING */}
-            <h2 className="text-[56px] font-medium leading-[0.95] tracking-[-0.05em] text-black md:text-[82px]">
-              Frequently asked questions
+            <h2 className="text-[48px] font-medium leading-[0.95] tracking-[-0.05em] text-black md:text-[72px]">
+              Frequently asked
+              <br />
+              questions
             </h2>
 
-            {/* FAQ LIST */}
-            <div className="mt-14 space-y-6">
-              
+            <div className="mt-12 space-y-6">
               {faqData.map((faq, index) => {
                 const isActive = activeIndex === index;
 
                 return (
                   <div
                     key={index}
-                    className={`overflow-hidden rounded-[28px] transition-all duration-300 ${
+                    className={`overflow-hidden rounded-[28px] shadow-[0_12px_40px_rgba(0,0,0,0.06)] transition-all duration-300 ${
                       isActive
                         ? "bg-[#18AEF5] text-white"
                         : "bg-white text-black"
@@ -84,7 +86,7 @@ export default function FaqSection() {
                       }
                       className="flex w-full items-center justify-between px-8 py-8 text-left"
                     >
-                      <h3 className="max-w-[520px] text-[34px] font-semibold leading-[1.05]">
+                      <h3 className="max-w-[520px] text-[24px] font-semibold leading-[1.1] md:text-[28px]">
                         {faq.question}
                       </h3>
 
@@ -95,7 +97,6 @@ export default function FaqSection() {
                       />
                     </button>
 
-                    {/* ANSWER */}
                     <div
                       className={`grid transition-all duration-300 ${
                         isActive
@@ -104,7 +105,13 @@ export default function FaqSection() {
                       }`}
                     >
                       <div className="overflow-hidden">
-                        <p className="px-8 pb-8 text-[22px] leading-relaxed text-white/90">
+                        <p
+                          className={`px-8 pb-8 text-[16px] leading-relaxed ${
+                            isActive
+                              ? "text-white/90"
+                              : "text-[#666666]"
+                          }`}
+                        >
                           {faq.answer}
                         </p>
                       </div>
@@ -114,6 +121,7 @@ export default function FaqSection() {
               })}
             </div>
           </div>
+
         </div>
       </div>
     </section>
