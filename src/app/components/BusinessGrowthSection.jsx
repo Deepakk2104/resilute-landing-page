@@ -4,7 +4,7 @@ import JoinWaitlistButton from "./JoinWaitlistButton";
 export default function BusinessGrowthSection() {
   return (
     <section className="px-4 py-10">
-      <div className="relative overflow-hidden rounded-[42px]">
+      <div className="relative overflow-visible rounded-[42px]">
 
         {/* FIGMA BACKGROUND EXPORT */}
         <Image
@@ -49,14 +49,14 @@ export default function BusinessGrowthSection() {
           </div>
 
           {/* ROBOT */}
-          <div className="absolute bottom-[40px] left-1/2 -translate-x-1/2">
+          <div className="absolute bottom-[-110px] left-1/2 w-[1050px] -translate-x-1/2">
   <Image
     src="/images/business-growth.png"
     alt="Business Growth Robot"
-    width={1800}
-    height={900}
+    width={2000}
+    height={1200}
     priority
-    className="w-[760px] object-contain"
+    className="h-auto w-full object-contain"
   />
 </div>
 

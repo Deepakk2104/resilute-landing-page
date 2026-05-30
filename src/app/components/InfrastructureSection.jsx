@@ -22,7 +22,7 @@ export default function InfrastructureSection() {
           <div className="absolute right-[8%] top-[16%] max-w-[520px]">
 
             {/* HEADING */}
-            <h2 className="leading-[0.92] tracking-[-0.06em]">
+            <h2 className="leading-[1.3] tracking-[-0.06em]">
 
               <div className="text-[72px] font-medium text-[#2F2F2F]">
                 We&apos;re not

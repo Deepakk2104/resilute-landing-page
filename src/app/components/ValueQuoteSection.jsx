@@ -8,7 +8,7 @@ export default function ValueQuoteSection() {
 
         {/* FIGMA BACKGROUND EXPORT */}
         <Image
-          src="/images/value-quote-bg.png"
+          src="/images/value-quote-bg.jpg"
           alt=""
           width={1600}
           height={1200}
@@ -20,18 +20,19 @@ export default function ValueQuoteSection() {
         <div className="absolute inset-0 flex flex-col items-center pt-[55px] text-center">
 
           {/* QUOTE */}
-          <h2 className="max-w-[1500px] text-[34px] font-medium leading-[0.95] tracking-[-0.05em] md:text-[52px] lg:text-[72px]">
-            <span className="text-[#2F2F2F]">
-              &quot;Every verified visit, every real interaction,
-              <br />
-              and every confirmed
-            </span>{" "}
-            <span className="bg-[linear-gradient(90deg,#4A4A4A_0%,#A6A6A6_100%)] bg-clip-text text-transparent">
-              purchase
-              <br />
-              becomes a permanent record of value.&quot;
-            </span>
-          </h2>
+          <h2 className="max-w-[1500px] text-[34px] font-medium leading-[0.95] tracking-[-0.06em] md:text-[52px] lg:text-[72px]">
+  <span className="text-[#2B2B2B]">
+    &quot;Every verified visit,
+  </span>{" "}
+
+  <span className="bg-[linear-gradient(90deg,#3F3F3F_0%,#A8A8A8_100%)] bg-clip-text text-transparent">
+    every real interaction,
+    <br />
+    and every confirmed purchase becomes a
+    <br />
+    permanent record of value.&quot;
+  </span>
+</h2>
 
           {/* BUTTON */}
           <div className="mt-5">

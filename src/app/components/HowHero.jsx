@@ -30,17 +30,17 @@ export default function HowHero() {
             {/* HEADING */}
             <h1 className="mt-8 leading-[0.9] tracking-[-0.08em]">
 
-              <div className="text-[86px] font-normal text-black">
+              <div className="text-[86px] mt-8 font-normal text-black">
                 Real places.
               </div>
 
-              <div className="text-[86px] font-normal text-black">
+              <div className="text-[86px] mt-12 font-normal text-black">
                 Real people.
               </div>
 
               <div
                 className="
-                  -mt-1
+                  mt-12
                   text-[82px]
                   font-normal
                   italic
@@ -55,7 +55,7 @@ export default function HowHero() {
             </h1>
 
             {/* BUTTON */}
-            <div className="mt-10">
+            <div className="mt-15">
               <JoinWaitlistButton />
             </div>
 

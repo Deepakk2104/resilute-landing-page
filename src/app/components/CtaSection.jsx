@@ -20,19 +20,27 @@ export default function CtaSection() {
           <div className="absolute inset-0">
             {/* Heading */}
             <div className="absolute left-[6%] top-[13%]">
-              <h2 className="max-w-[420px] text-[44px] font-bold leading-[0.92] tracking-[-0.04em] text-[#3F3F3F] md:text-[54px] lg:text-[60px]">
-                We&apos;re not
-                <br />
-                tracking clicks,
-              </h2>
+              <h2 className="max-w-[430px] text-[60px] font-medium leading-[0.9] tracking-[-0.065em]">
+  <span className="text-[#222222]">
+    We&apos;re not
+  </span>
 
-              <h2 className="mt-8 max-w-[420px] text-[44px] font-bold leading-[0.92] tracking-[-0.04em] text-[#4470C1] md:text-[54px] lg:text-[60px]">
-                We&apos;re verifying
-                <br />
-                reality.
-              </h2>
+  <br />
 
-              <JoinWaitlistButton className="mt-10" />
+  <span className="bg-[linear-gradient(90deg,#2F2F2F_0%,#8A8A8A_100%)] bg-clip-text text-transparent">
+    tracking clicks,
+  </span>
+</h2>
+
+              <h2 className="mt-15 max-w-[430px] text-[60px] font-medium leading-[0.9] tracking-[-0.065em]">
+  <span className="bg-[linear-gradient(90deg,#4C73D8_0%,#2F5FC8_100%)] bg-clip-text text-transparent">
+    We&apos;re verifying
+    <br />
+    reality.
+  </span>
+</h2>
+
+              <JoinWaitlistButton className="mt-18" />
             </div>
 
             {/* Bottom Text */}

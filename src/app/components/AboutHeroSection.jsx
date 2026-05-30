@@ -25,7 +25,7 @@ export default function AboutHeroSection() {
           </p>
 
           {/* HEADING */}
-          <h1 className="mt-8 leading-[0.9] tracking-[-0.065em]">
+          <h1 className="mt-8 leading-[1.2] tracking-[-0.065em]">
 
             <div
               className="

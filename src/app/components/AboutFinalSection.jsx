@@ -19,7 +19,7 @@ export default function AboutFinalSection() {
         {/* CONTENT */}
         <div className="absolute inset-0">
 
-          <div className="absolute left-[7%] top-[28%] max-w-[520px]">
+          <div className="absolute left-[7%] top-[28%] max-w-[720px]">
 
             {/* HEADING */}
             <h2 className="leading-[0.92] tracking-[-0.06em]">
