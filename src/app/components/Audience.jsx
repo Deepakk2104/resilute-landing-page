@@ -95,15 +95,19 @@ export default function Audience() {
                 </p>
 
                 {/* Figma: Frame 1618874019 (Button) */}
-                <button
-                  type="button"
-                  className="mt-8 flex items-center justify-center gap-[10px] bg-gradient-to-r from-[#2350AD] to-[#719AEF] rounded-[10px] w-full max-w-[402px] h-[51px] transition-transform duration-200 active:scale-[0.99] hover:brightness-105"
-                >
-                  <span className="text-white font-semibold text-[16px] leading-[24px]">
-                    Start building reputation
-                  </span>
-                  <ArrowRight size={16} className="text-white" strokeWidth={2.5} />
-                </button>
+               <button
+  type="button"
+  className="group mt-8 flex items-center justify-center gap-[10px] bg-gradient-to-r from-[#2350AD] to-[#719AEF] rounded-[10px] w-full max-w-[402px] h-[51px] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:brightness-110 active:scale-[0.99]"
+>
+  <span className="text-white font-semibold text-[16px] leading-[24px]">
+    Start building reputation
+  </span>
+  <ArrowRight
+    size={16}
+    className="text-white transition-transform duration-300 group-hover:translate-x-1"
+    strokeWidth={2.5}
+  />
+</button>
               </div>
             </article>
 
@@ -149,13 +153,17 @@ export default function Audience() {
         </div>
 
         {/* Action Button */}
-        <button
-          type="button"
-          className="mt-8 flex items-center justify-center gap-[8px] bg-gradient-to-r from-[#1d4ed8] to-[#60a5fa] rounded-[14px] w-full h-[54px] transition-all duration-200 active:scale-[0.99] hover:brightness-105 shadow-md shadow-blue-600/20 text-white font-medium text-[16px]"
-        >
-          <span>Explore merchant tools</span>
-          <ArrowRight size={18} strokeWidth={2.5} />
-        </button>
+       <button
+  type="button"
+  className="group mt-8 flex items-center justify-center gap-[8px] bg-gradient-to-r from-[#1d4ed8] to-[#60a5fa] rounded-[14px] w-full h-[54px] shadow-md shadow-blue-600/20 text-white font-medium text-[16px] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:brightness-110 hover:shadow-lg hover:shadow-blue-500/30 active:scale-[0.99]"
+>
+  <span>Explore merchant tools</span>
+  <ArrowRight
+    size={18}
+    strokeWidth={2.5}
+    className="transition-transform duration-300 group-hover:translate-x-1"
+  />
+</button>
         
       </div>
     </article>
