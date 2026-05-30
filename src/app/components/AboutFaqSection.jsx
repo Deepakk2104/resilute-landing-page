@@ -27,98 +27,130 @@ export default function AboutFaqSection() {
 
   return (
     <section className="px-4 py-10">
-      
       <div className="relative overflow-hidden rounded-[42px]">
-        
-        {/* BACKGROUND IMAGE */}
+
+        {/* FIGMA BACKGROUND EXPORT */}
         <Image
-          src="/images/faq-bg.png"
+          src="/images/about-faq-bg.jpg"
           alt=""
-          fill
-          className="object-cover"
+          width={1600}
+          height={1100}
           priority
+          className="h-auto w-full"
         />
 
         {/* CONTENT */}
-        <div className="relative z-10 grid min-h-[950px] items-center gap-16 px-8 py-16 md:px-14 lg:grid-cols-2">
-          
-          {/* LEFT SIDE */}
-          <div className="relative flex items-end justify-center">
-            
-            <Image
-              src="/images/faq-robot.png"
-              alt="FAQ Robot"
-              width={700}
-              height={900}
-              className="w-full max-w-[620px] object-contain"
-              priority
-            />
-          </div>
+        <div className="absolute inset-0">
 
-          {/* RIGHT SIDE */}
-          <div className="max-w-[760px]">
-            
-            {/* HEADING */}
-            <h2 className="text-[56px] font-medium leading-[0.95] tracking-[-0.05em] text-black md:text-[82px]">
-              Frequently asked questions
-            </h2>
+          {/* HEADING */}
+          <h2
+            className="
+              absolute
+              left-[53%]
+              top-[13%]
+              text-[32px]
+              font-medium
+              tracking-[-0.04em]
+              text-black
+            "
+          >
+            Frequently asked questions
+          </h2>
 
-            {/* FAQ LIST */}
-            <div className="mt-14 space-y-6">
-              
-              {faqData.map((faq, index) => {
-                const isActive = activeIndex === index;
+          {/* FAQS */}
+          <div className="absolute left-[53%] top-[23%] w-[42%] space-y-6">
 
-                return (
-                  <div
-                    key={index}
-                    className={`overflow-hidden rounded-[28px] transition-all duration-300 ${
+            {faqData.map((faq, index) => {
+              const isActive = activeIndex === index;
+
+              return (
+                <div
+                  key={index}
+                  className={`
+                    overflow-hidden
+                    rounded-[18px]
+                    transition-all
+                    duration-300
+                    ${
                       isActive
-                        ? "bg-[#18AEF5] text-white"
-                        : "bg-white text-black shadow-[0_15px_40px_rgba(0,0,0,0.04)]"
-                    }`}
+                        ? "bg-[#18AEF5]"
+                        : "bg-white shadow-[0_20px_40px_rgba(0,0,0,0.06)]"
+                    }
+                  `}
+                >
+                  <button
+                    onClick={() =>
+                      setActiveIndex(isActive ? null : index)
+                    }
+                    className="
+                      flex
+                      w-full
+                      items-center
+                      justify-between
+                      px-8
+                      py-8
+                      text-left
+                    "
                   >
-                    <button
-                      onClick={() =>
-                        setActiveIndex(isActive ? null : index)
-                      }
-                      className="flex w-full items-center justify-between px-8 py-8 text-left"
+                    <h3
+                      className={`
+                        text-[22px]
+                        font-medium
+                        leading-[1.1]
+                        ${
+                          isActive
+                            ? "text-white"
+                            : "text-[#1D1D1D]"
+                        }
+                      `}
                     >
-                      <h3 className="max-w-[520px] text-[32px] font-semibold leading-[1.05]">
-                        {faq.question}
-                      </h3>
+                      {faq.question}
+                    </h3>
 
-                      <FaChevronUp
-                        className={`text-xl transition-transform duration-300 ${
-                          isActive ? "rotate-0" : "rotate-180"
-                        }`}
-                      />
-                    </button>
+                    <FaChevronUp
+                      className={`
+                        text-[18px]
+                        transition-transform
+                        duration-300
+                        ${
+                          isActive
+                            ? "rotate-0 text-white"
+                            : "rotate-180 text-[#1D1D1D]"
+                        }
+                      `}
+                    />
+                  </button>
 
-                    {/* ANSWER */}
-                    <div
-                      className={`grid transition-all duration-300 ${
+                  <div
+                    className={`
+                      grid
+                      transition-all
+                      duration-300
+                      ${
                         isActive
-                          ? "grid-rows-[1fr] opacity-100"
-                          : "grid-rows-[0fr] opacity-0"
-                      }`}
-                    >
-                      <div className="overflow-hidden">
-                        <p
-                          className={`px-8 pb-8 text-[20px] leading-relaxed ${
-                            isActive
-                              ? "text-white/90"
-                              : "text-[#666]"
-                          }`}
-                        >
-                          {faq.answer}
-                        </p>
-                      </div>
+                          ? "grid-rows-[1fr]"
+                          : "grid-rows-[0fr]"
+                      }
+                    `}
+                  >
+                    <div className="overflow-hidden">
+                      <p
+                        className="
+                          px-8
+                          pb-8
+                          text-[14px]
+                          leading-[1.5]
+                          text-white
+                        "
+                      >
+                        {faq.answer}
+                      </p>
                     </div>
                   </div>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
+
           </div>
         </div>
       </div>
