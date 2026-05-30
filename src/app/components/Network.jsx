@@ -31,7 +31,7 @@ export default function Network() {
             Verify real-world interactions, build portable reputation, and unlock
             value from genuine participation.
           </p>
-         <button
+        <button
   type="button"
   className="
     mt-10
@@ -48,9 +48,16 @@ export default function Network() {
     leading-[24px]
     tracking-[-0.44px]
     text-white
+
     transition-all
     duration-300
-    hover:brightness-105
+
+    hover:-translate-y-1
+    hover:scale-[1.03]
+    hover:shadow-[0_10px_30px_rgba(61,122,255,0.35)]
+    hover:brightness-110
+
+    active:scale-[0.98]
   "
 >
   Explore the Network

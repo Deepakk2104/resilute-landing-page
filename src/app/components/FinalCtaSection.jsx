@@ -47,39 +47,60 @@ export default function FinalCtaSection() {
 
             {/* BUTTON */}
             <button
-              className="
-                mt-10
-                flex
-                h-[45px]
-                items-center
-                gap-2
-                rounded-full
-                bg-[linear-gradient(90.76deg,#2350AD_0.11%,#719AEF_99.89%)]
-                pl-5
-                pr-2
-                text-[16px]
-                font-semibold
-                text-white
-              "
-            >
-              See it in action
+  className="
+    group
+    mt-10
+    flex
+    h-[45px]
+    items-center
+    gap-2
+    rounded-full
+    bg-[linear-gradient(90.76deg,#2350AD_0.11%,#719AEF_99.89%)]
 
-              <span
-                className="
-                  flex
-                  h-[32px]
-                  w-[32px]
-                  items-center
-                  justify-center
-                  rounded-full
-                  bg-white
-                  text-[20px]
-                  text-[#2350AD]
-                "
-              >
-                →
-              </span>
-            </button>
+    pl-5
+    pr-2
+
+    text-[16px]
+    font-semibold
+    text-white
+
+    shadow-[0_6px_18px_rgba(35,80,173,0.18)]
+
+    transition-all
+    duration-300
+
+    hover:-translate-y-1
+    hover:scale-[1.03]
+    hover:brightness-110
+    hover:shadow-[0_12px_30px_rgba(35,80,173,0.35)]
+
+    active:scale-[0.98]
+  "
+>
+  See it in action
+
+  <span
+    className="
+      flex
+      h-[32px]
+      w-[32px]
+      items-center
+      justify-center
+      rounded-full
+      bg-white
+      text-[20px]
+      text-[#2350AD]
+
+      transition-all
+      duration-300
+
+      group-hover:translate-x-1
+      group-hover:scale-110
+    "
+  >
+    →
+  </span>
+</button>
 
           </div>
 

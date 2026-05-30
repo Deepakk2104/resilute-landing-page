@@ -23,9 +23,8 @@ const cards = [
 export default function MissionSection() {
   return (
     <section className="px-4 py-10">
-      
       <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb] px-8 py-16 md:px-14">
-        
+
         {/* GRID BACKGROUND */}
         <div className="absolute inset-0 opacity-[0.35]">
           <div
@@ -42,10 +41,9 @@ export default function MissionSection() {
 
         {/* CONTENT */}
         <div className="relative z-10">
-          
-          {/* TOP */}
+
+          {/* TOP CONTENT */}
           <div className="mx-auto max-w-[1100px] text-center">
-            
             <p className="text-[14px] font-semibold uppercase tracking-[0.22em] text-[#4D73E6]">
               OUR MISSION
             </p>
@@ -54,50 +52,115 @@ export default function MissionSection() {
               Make real-world participation count
             </h2>
 
-            <p className="mx-auto mt-8 max-w-[980px] text-[18px] leading-relaxed text-[#666]">
-              Resilute gives real-world actions the same value and visibility as digital ones. Every visit, purchase, and interaction should be measurable and meaningful.
+            <p className="mx-auto mt-8 max-w-[980px] text-[18px] leading-relaxed text-[#666666]">
+              Resilute gives real-world actions the same value and visibility
+              as digital ones. Every visit, purchase, and interaction should be
+              measurable and meaningful.
             </p>
           </div>
 
           {/* CARDS */}
-          <div className="mx-auto mt-20 grid max-w-[1450px] gap-8 lg:grid-cols-2">
-            
+          <div className="mx-auto mt-20 grid max-w-[1450px] gap-6 lg:grid-cols-2">
             {cards.map((card, index) => (
               <div
                 key={index}
-                className="rounded-[34px] bg-white px-10 py-10 shadow-[0_20px_60px_rgba(0,0,0,0.05)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(77,115,230,0.08)]"
+                className="
+                  rounded-[28px]
+                  bg-white
+                  px-9
+                  pt-16
+                  pb-5
+                  min-h-[420px]
+
+                  shadow-[0_8px_30px_rgba(0,0,0,0.04)]
+
+                  transition-all
+                  duration-300
+
+                  hover:-translate-y-1
+                  hover:shadow-[0_12px_40px_rgba(77,115,230,0.08)]
+                "
               >
-                
                 {/* ICON */}
-                <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#2D5BDB] text-[18px] text-white">
+                <div
+                  className="
+                    flex
+                    h-[36px]
+                    w-[36px]
+                    items-center
+                    justify-center
+                    rounded-[6px]
+                    bg-[#2D5BDB]
+                    text-[14px]
+                    text-white
+                  "
+                >
                   {card.icon}
                 </div>
 
                 {/* LABEL */}
-                <p className="mt-8 text-[13px] font-semibold uppercase tracking-[0.2em] text-[#4D73E6]">
+                <p
+                  className="
+                    mt-9
+                    text-[11px]
+                    font-semibold
+                    uppercase
+                    tracking-[0.22em]
+                    text-[#4D73E6]
+                  "
+                >
                   {card.label}
                 </p>
 
                 {/* TITLE */}
-                <h3 className="mt-5 max-w-[420px] text-[42px] font-medium leading-[0.95] tracking-[-0.05em] text-black">
+                <h3
+                  className="
+                    mt-4
+                    max-w-[720px]
+                    text-[34px]
+                    font-medium
+                    leading-[1]
+                    tracking-[-0.05em]
+                    text-black
+                  "
+                >
                   {card.title}
                 </h3>
 
                 {/* DESCRIPTION */}
-                <p className="mt-8 max-w-[520px] text-[18px] leading-relaxed text-[#666]">
+                <p
+                  className="
+                    mt-8
+                    max-w-[700px]
+                    text-[16px]
+                    leading-[1.55]
+                    text-[#666666]
+                  "
+                >
                   {card.desc}
                 </p>
 
                 {/* DIVIDER */}
-                <div className="mt-12 h-[1px] w-full bg-[#ececec]" />
+                <div className="mt-14 h-px w-full bg-[#ECECEC]" />
 
                 {/* BUTTON */}
-                <button className="mt-8 text-[15px] font-semibold text-[#2D5BDB] transition-all duration-300 hover:translate-x-1">
-                  {card.button} ↗
+                <button
+                  className="
+                    mt-8
+                    text-[15px]
+                    font-semibold
+                    text-[#2D5BDB]
+                    transition-all
+                    duration-300
+                    hover:translate-x-1
+                  "
+                >
+                  {card.button} →
                 </button>
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>

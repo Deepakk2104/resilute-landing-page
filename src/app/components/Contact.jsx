@@ -80,11 +80,32 @@ export default function Contact() {
                 />
 
                 <button
-                  type="submit"
-                  className="h-[45px] w-[140px] rounded-[11px] bg-[linear-gradient(90.76deg,#2350AD_0.11%,#719AEF_99.89%)] text-[16px] font-semibold text-white shadow-[0_6px_18px_rgba(35,80,173,0.18)] transition-all duration-300 hover:scale-[1.02]"
-                >
-                  Submit now
-                </button>
+  type="submit"
+  className="
+    h-[45px]
+    w-[140px]
+    rounded-[11px]
+    bg-[linear-gradient(90.76deg,#2350AD_0.11%,#719AEF_99.89%)]
+
+    text-[16px]
+    font-semibold
+    text-white
+
+    shadow-[0_6px_18px_rgba(35,80,173,0.18)]
+
+    transition-all
+    duration-300
+
+    hover:-translate-y-1
+    hover:scale-[1.03]
+    hover:brightness-110
+    hover:shadow-[0_12px_30px_rgba(35,80,173,0.35)]
+
+    active:scale-[0.98]
+  "
+>
+  Submit now
+</button>
               </div>
             </form>
 

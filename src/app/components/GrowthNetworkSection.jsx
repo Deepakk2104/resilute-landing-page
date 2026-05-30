@@ -73,9 +73,17 @@ export default function GrowthNetworkSection() {
     tracking-[-0.44px]
     text-white
 
+    shadow-[0_6px_18px_rgba(35,80,173,0.18)]
+
     transition-all
     duration-300
-    hover:brightness-105
+
+    hover:-translate-y-1
+    hover:scale-[1.03]
+    hover:brightness-110
+    hover:shadow-[0_12px_30px_rgba(35,80,173,0.35)]
+
+    active:scale-[0.98]
   "
 >
   See how it works

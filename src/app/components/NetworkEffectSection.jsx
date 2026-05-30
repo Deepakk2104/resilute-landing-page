@@ -27,7 +27,7 @@ export default function NetworkEffectSection() {
   return (
     <section className="px-4 py-10">
       <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb] px-8 py-16 md:px-14">
-        
+
         {/* GRID BACKGROUND */}
         <div className="absolute inset-0 opacity-[0.35]">
           <div
@@ -44,7 +44,7 @@ export default function NetworkEffectSection() {
 
         {/* CONTENT */}
         <div className="relative z-10">
-          
+
           {/* HEADING */}
           <div className="mx-auto max-w-[900px] text-center">
             <h2 className="text-[42px] font-medium leading-[1.05] tracking-[-0.04em] text-black md:text-[64px]">
@@ -62,32 +62,25 @@ export default function NetworkEffectSection() {
             {cards.map((card, index) => (
               <div
                 key={index}
-                className={`
+                className="
                   rounded-[30px]
                   bg-white
                   px-8
                   py-8
                   border
+                  border-transparent
+
+                  shadow-[0_4px_24px_rgba(0,0,0,0.04)]
+
                   transition-all
                   duration-300
 
-                  ${
-                    card.featured
-                      ? `
-                        border-[#7A97E8]
-                        shadow-[0_4px_18px_-5px_#2350AD,0_4px_30px_rgba(45,30,133,0.10)]
-                      `
-                      : `
-                        border-transparent
-                        shadow-[0_4px_24px_rgba(0,0,0,0.04)]
-                      `
-                  }
-
+                  hover:-translate-y-1
                   hover:border-[#7A97E8]
                   hover:shadow-[0_4px_18px_-5px_#2350AD,0_4px_30px_rgba(45,30,133,0.10)]
-                `}
+                "
               >
-                
+
                 {/* ICON */}
                 <div className="text-[18px] text-[#4D73E6]">
                   {card.icon}
@@ -116,6 +109,7 @@ export default function NetworkEffectSection() {
               </div>
             ))}
           </div>
+
         </div>
       </div>
     </section>
