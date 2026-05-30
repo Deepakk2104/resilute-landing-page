@@ -4,70 +4,81 @@ import JoinWaitlistButton from "./JoinWaitlistButton";
 export default function RealCustomersSection() {
   return (
     <section className="px-4 py-10">
-      
-      <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb]">
-        
-        {/* BACKGROUND */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#f8f9fc] via-[#f7f8fb] to-[#eef4ff]" />
+      <div className="relative overflow-hidden rounded-[42px]">
+
+        {/* FIGMA EXPORT */}
+        <Image
+          src="/images/real-customers-section-bg.jpg"
+          alt=""
+          width={1600}
+          height={900}
+          priority
+          className="h-auto w-full"
+        />
 
         {/* CONTENT */}
-        <div className="relative z-10 grid min-h-[700px] items-center gap-10 lg:grid-cols-2">
-          
-          {/* LEFT SIDE */}
-          <div className="relative flex h-full items-end">
-            
-            {/* BACKGROUND WAVE IMAGE */}
-            <Image
-              src="/images/real-customers-bg.png"
-              alt=""
-              fill
-              className="object-cover object-left-bottom"
-              priority
-            />
+        <div className="absolute inset-0">
 
-            {/* ROBOT IMAGE */}
-            <div className="relative z-10">
-              <Image
-                src="/images/real-customers-robot.png"
-                alt="Real Customers Robot"
-                width={900}
-                height={900}
-                priority
-                className="w-full max-w-[900px] object-contain"
-              />
-            </div>
-          </div>
+          <div className="absolute right-[8%] top-[10%] max-w-[420px]">
 
-          {/* RIGHT SIDE */}
-          <div className="relative z-10 flex justify-center px-8 py-16 md:px-12">
-            
-            <div className="max-w-[620px]">
-              
-              {/* HEADING */}
-              <h2 className="text-[56px] font-medium leading-[0.92] tracking-[-0.06em] text-black md:text-[88px]">
-                
+            {/* HEADING */}
+            <h2 className="leading-[0.92] tracking-[-0.06em]">
+
+              <div className="text-[72px] font-medium text-[#2F2F2F]">
                 We’re not
-                <span className="text-black/45">
-                  {" "}tracking clicks,
-                </span>
-
-                <br />
-
-                <span className="text-[#4D73E6]">
-                  We’re
-                  <br />
-                  measuring real
-                  <br />
-                  customers.
-                </span>
-              </h2>
-
-              {/* BUTTON */}
-              <div className="mt-12">
-                <JoinWaitlistButton text="See It in Action" />
               </div>
+
+              <div className="text-[72px] font-medium text-[#7A7A7A]">
+                tracking clicks,
+              </div>
+
+              <div
+                className="
+                  mt-4
+                  bg-[linear-gradient(90deg,#4B6FD8_0%,#2F57C5_100%)]
+                  bg-clip-text
+                  text-[72px]
+                  font-medium
+                  text-transparent
+                "
+              >
+                We’re
+              </div>
+
+              <div
+                className="
+                  bg-[linear-gradient(90deg,#4B6FD8_0%,#2F57C5_100%)]
+                  bg-clip-text
+                  text-[72px]
+                  font-medium
+                  leading-[0.95]
+                  text-transparent
+                "
+              >
+                measuring real
+              </div>
+
+              <div
+                className="
+                  bg-[linear-gradient(90deg,#4B6FD8_0%,#2F57C5_100%)]
+                  bg-clip-text
+                  text-[72px]
+                  font-medium
+                  leading-[0.95]
+                  text-transparent
+                "
+              >
+                customers.
+              </div>
+            </h2>
+
+            {/* BUTTON */}
+            <div className="mt-8">
+              <JoinWaitlistButton text="See It in Action" />
             </div>
+
           </div>
+
         </div>
       </div>
     </section>

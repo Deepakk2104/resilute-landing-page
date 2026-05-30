@@ -3,58 +3,72 @@ import Image from "next/image";
 export default function AboutHeroSection() {
   return (
     <section className="px-4 py-6">
-      
-      <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb]">
-        
-        {/* BACKGROUND GRADIENT */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#ffe8f8] via-[#f8f9fc] to-[#dff6ff]" />
+      <div className="relative overflow-hidden rounded-[42px]">
+
+        {/* FIGMA BACKGROUND EXPORT */}
+        <Image
+          src="/images/about-hero-bg.jpg"
+          alt=""
+          width={1800}
+          height={1200}
+          priority
+          className="h-auto w-full"
+        />
 
         {/* CONTENT */}
-        <div className="relative z-10 flex min-h-[1050px] flex-col items-center px-8 pt-16 text-center md:px-14">
-          
-          {/* TOP LABEL */}
-          <p className="flex items-center gap-2 text-[14px] font-medium uppercase tracking-[0.16em] text-black">
+        <div className="absolute inset-0 flex flex-col items-center pt-[42px] text-center">
+
+          {/* LABEL */}
+          <p className="flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.18em] text-[#111111]">
             <span className="text-[#4D73E6]">✦</span>
-            About Resilute
+            ABOUT RESILUTE
           </p>
 
           {/* HEADING */}
-          <h1 className="mt-10 max-w-[1450px] text-[58px] font-medium leading-[0.92] tracking-[-0.06em] text-black md:text-[108px]">
-            
-            Building the participation layer for the
+          <h1 className="mt-8 leading-[0.9] tracking-[-0.065em]">
 
-            <br />
+            <div
+              className="
+                bg-[linear-gradient(90deg,#2F2F2F_0%,#707070_100%)]
+                bg-clip-text
+                text-[86px]
+                font-medium
+                text-transparent
+              "
+            >
+              Building the participation layer
+            </div>
 
-            <span className="italic font-normal text-[#5A7CEB]">
+            <div
+              className="
+                bg-[linear-gradient(90deg,#2F2F2F_0%,#707070_100%)]
+                bg-clip-text
+                text-[86px]
+                font-medium
+                text-transparent
+              "
+            >
+              for the
+            </div>
+
+            <div
+              className="
+                mt-1
+                bg-[linear-gradient(90deg,#4D73E6_0%,#7F9CE4_100%)]
+                bg-clip-text
+                text-[92px]
+                font-normal
+                italic
+                text-transparent
+              "
+            >
               Physical Economy
-            </span>
+            </div>
+
           </h1>
 
-          {/* VISUAL */}
-         {/* VISUAL */}
-<div className="relative mt-auto flex w-full items-end justify-center">
-  
-  {/* CITY BACKGROUND */}
-  <Image
-    src="/images/about-city-bg.png"
-    alt="About Background"
-    width={1800}
-    height={1200}
-    priority
-    className="w-full object-contain"
-  />
-
-  {/* ROBOT */}
-  <Image
-    src="/images/about-robot.png"
-    alt="About Robot"
-    width={760}
-    height={920}
-    priority
-    className="absolute bottom-[-40px] left-1/2 z-20 w-full max-w-[620px] -translate-x-1/2 object-contain"
-  />
-</div>
         </div>
+
       </div>
     </section>
   );
