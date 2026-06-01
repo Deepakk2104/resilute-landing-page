@@ -25,7 +25,7 @@ export default function WhyNowSection() {
       <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb] px-8 py-14 md:px-14">
         
         {/* GRID BACKGROUND */}
-        <div className="absolute inset-0 opacity-[0.35]">
+        <div className="absolute inset-0 opacity-[0.95]">
           <div
             className="h-full w-full"
             style={{
@@ -37,6 +37,29 @@ export default function WhyNowSection() {
             }}
           />
         </div>
+       {/* TOP LEFT GRADIENT */}
+<div
+  className="absolute left-[-180px] top-[-120px]"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(239.5px)",
+    opacity: 1.45,
+  }}
+/>
+
+{/* BOTTOM RIGHT GRADIENT */}
+<div
+  className="absolute right-[-180px] bottom-[-120px]"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(239.5px)",
+    opacity: 1.45,
+  }}
+/>
 
         {/* CONTENT */}
         <div className="relative z-10 grid items-center gap-16 lg:grid-cols-2">

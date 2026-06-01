@@ -20,7 +20,7 @@ export default function ValueQuoteSection() {
         <div className="absolute inset-0 flex flex-col items-center pt-[55px] text-center">
 
           {/* QUOTE */}
-          <h2 className="max-w-[1500px] text-[34px] font-medium leading-[0.95] tracking-[-0.06em] md:text-[52px] lg:text-[72px]">
+          <h2 className="max-w-[1500px] text-[24px] font-medium leading-[0.99] tracking-[-0.06em] md:text-[30px] lg:text-[58px]">
   <span className="text-[#2B2B2B]">
     &quot;Every verified visit,
   </span>{" "}

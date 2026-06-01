@@ -6,18 +6,18 @@ import { HiMiniSparkles } from "react-icons/hi2";
 
 const cards = [
   {
-    icon: <FaStore />,
+    icon: "/images/iconw.png",
     title: "More merchants join",
     desc: "Each new location increases the value of the network.",
   },
   {
-    icon: <HiMiniSparkles />,
+    icon: "/images/iconw2.png",
     title: "More users participate",
     desc: "Verified activity grows, strengthening the data layer.",
     featured: true,
   },
   {
-    icon: <FaChartLine />,
+    icon: "/images/iconw1.png",
     title: "The network compounds",
     desc: "The more you participate, the more valuable your reputation becomes.",
   },
@@ -29,7 +29,7 @@ export default function NetworkEffectSection() {
       <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb] px-8 py-16 md:px-14">
 
         {/* GRID BACKGROUND */}
-        <div className="absolute inset-0 opacity-[0.35]">
+        <div className="absolute inset-0 opacity-[0.65]">
           <div
             className="h-full w-full"
             style={{
@@ -41,15 +41,38 @@ export default function NetworkEffectSection() {
             }}
           />
         </div>
+    {/* LEFT */}
+<div
+  className="absolute left-[-420px] top-1/2 -translate-y-1/2"
+  style={{
+    width: "530px",
+    height: "530px",
+    background: "#A39CEC",
+    filter: "blur(220px)",
+    opacity: 0.45,
+  }}
+/>
+
+{/* RIGHT */}
+<div
+  className="absolute right-[-420px] top-1/2 -translate-y-1/2"
+  style={{
+    width: "530px",
+    height: "530px",
+    background: "#A39CEC",
+    filter: "blur(220px)",
+    opacity: 0.45,
+  }}
+/>
 
         {/* CONTENT */}
         <div className="relative z-10">
 
           {/* HEADING */}
-          <div className="mx-auto max-w-[900px] text-center">
-            <h2 className="text-[42px] font-medium leading-[1.05] tracking-[-0.04em] text-black md:text-[64px]">
-              The more people use it, the more valuable it becomes
-            </h2>
+          <div className="mx-auto max-w-[1700px] text-center">
+            <h2 className="text-[16px] font-medium leading-[1] tracking-[-0.04em] text-black md:text-[40px]">
+  The more people use it, the more valuable it becomes
+</h2>
 
             <p className="mx-auto mt-5 max-w-[700px] text-[16px] leading-relaxed text-[#666666]">
               Resilute is a two-sided network. Merchants and customers reinforce
@@ -82,9 +105,13 @@ export default function NetworkEffectSection() {
               >
 
                 {/* ICON */}
-                <div className="text-[18px] text-[#4D73E6]">
-                  {card.icon}
-                </div>
+                <div className="flex h-12 w-12 items-center justify-center">
+  <img
+    src={card.icon}
+    alt={card.title}
+    className="h-8 w-8 object-contain"
+  />
+</div>
 
                 {/* TITLE */}
                 <h3 className="mt-8 text-[20px] font-semibold leading-[1.2] text-black">

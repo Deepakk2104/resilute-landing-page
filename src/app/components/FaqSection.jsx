@@ -48,7 +48,7 @@ export default function FaqSection() {
               absolute
               left-[53%]
               top-[35%]
-              text-[62px]
+              text-[52px]
               font-medium
               tracking-[-0.04em]
               text-black
@@ -58,7 +58,7 @@ export default function FaqSection() {
           </h2>
 
           {/* FAQS */}
-          <div className="absolute left-[53%] top-[57%] w-[42%] space-y-6">
+          <div className="absolute left-[53%] top-[50%] w-[42%] space-y-6">
 
             {faqData.map((faq, index) => {
               const isActive = activeIndex === index;

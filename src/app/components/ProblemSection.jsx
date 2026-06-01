@@ -7,22 +7,22 @@ import {
 
 const problems = [
   {
-    icon: <FaTag />,
+    icon: "/images/icon.png",
     title: "Loyalty programs no one uses",
     desc: "Most customers forget or ignore them. There’s no lasting value.",
   },
   {
-    icon: <FaBullhorn />,
+    icon: "/images/icon2.png",
     title: "Marketing with no proof",
     desc: "Businesses spend money without knowing what actually drives visits.",
   },
   {
-    icon: <FaShieldHalved />,
+    icon: "/images/icon3.png",
     title: "Fake check-ins",
     desc: "Location systems can be spoofed, creating false engagement.",
   },
   {
-    icon: <FaLocationDot />,
+    icon: "/images/icon4.png",
     title: "No verified real-world data",
     desc: "There’s no reliable way to prove real customer activity.",
   },
@@ -34,19 +34,42 @@ export default function ProblemSection() {
       
       <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb] px-8 py-14 md:px-14">
         
-        {/* GRID BACKGROUND */}
-        <div className="absolute inset-0 opacity-[0.35]">
-          <div
-            className="h-full w-full"
-            style={{
-              backgroundImage: `
-                linear-gradient(to right, rgba(90,124,235,0.08) 1px, transparent 1px),
-                linear-gradient(to bottom, rgba(90,124,235,0.08) 1px, transparent 1px)
-              `,
-              backgroundSize: "48px 48px",
-            }}
-          />
-        </div>
+       {/* GRID BACKGROUND */}
+<div className="absolute inset-0 opacity-[0.35]">
+  <div
+    className="h-full w-full"
+    style={{
+      backgroundImage: `
+        linear-gradient(to right, rgba(90,124,235,0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(90,124,235,0.08) 1px, transparent 1px)
+      `,
+      backgroundSize: "48px 48px",
+    }}
+  />
+</div>
+
+{/* FIGMA CENTER GLOW */}
+<div
+  className="absolute left-1/2 top-[420px] -translate-x-1/2"
+  style={{
+    width: "380px",
+    height: "380px",
+    background: "#7AA8FF",
+    filter: "blur(180px)",
+    opacity: 0.22,
+  }}
+/>
+
+<div
+  className="absolute left-1/2 top-[470px] -translate-x-1/2"
+  style={{
+    width: "520px",
+    height: "180px",
+    background: "#A39CEC",
+    filter: "blur(220px)",
+    opacity: 0.35,
+  }}
+/>
 
         {/* CONTENT */}
         <div className="relative z-10">
@@ -74,9 +97,13 @@ export default function ProblemSection() {
               >
                 
                 {/* ICON */}
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#f4f7ff] text-[18px] text-[#2D5BDB]">
-                  {problem.icon}
-                </div>
+               <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#f4f7ff]">
+  <img
+    src={problem.icon}
+    alt={problem.title}
+    className="h-9 w-9 object-contain"
+  />
+</div>
 
                 {/* TITLE */}
                 <h3 className="mt-8 text-[28px] font-semibold leading-[1.1] text-black">
@@ -103,15 +130,19 @@ export default function ProblemSection() {
               {/* LEFT */}
               <div>
                 
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white/5 text-[#4D73E6]">
-                  <FaShieldHalved />
-                </div>
+                <div className="flex h-12 w-12 items-center justify-center">
+  <img
+    src="/images/iconsh.png"
+    alt="Shield"
+    className="h-12 w-12 object-contain"
+  />
+</div>
 
                 <h3 className="mt-6 max-w-[620px] text-[40px] font-medium leading-[1] tracking-[-0.04em] text-white">
                   No one has built a verified participation layer
                 </h3>
 
-                <p className="mt-5 text-[18px] text-white/70">
+                <p className="mt-5 text-[18px] text-white">
                   That’s exactly what Resilute is solving.
                 </p>
               </div>

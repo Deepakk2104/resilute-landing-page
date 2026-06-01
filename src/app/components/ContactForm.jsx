@@ -15,11 +15,11 @@ export default function ContactForm() {
         {/* TOP */}
         <div className="text-center">
           
-          <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#8b7a7a]">
+          <p className="text-[15px] font-medium uppercase tracking-[0.2em] text-[#8b7a7a]">
             ✦ GET IN TOUCH
           </p>
 
-          <h2 className="mt-6 text-[40px] font-semibold tracking-[-0.05em] text-black md:text-[72px]">
+          <h2 className="mt-6 text-[40px] font-medium tracking-[-0.05em] text-black md:text-[52px]">
             Let&apos;s build something real together
           </h2>
         </div>
@@ -150,11 +150,11 @@ export default function ContactForm() {
                 </div>
 
                 <div>
-                  <p className="text-sm font-semibold tracking-[0.14em] text-[#4D73E6]">
+                  <p className="text-[15px] font-semibold tracking-[0.14em] text-[#4D73E6]">
                     {item.title}
                   </p>
 
-                  <h3 className="mt-2 text-[28px] font-medium text-black">
+                  <h3 className="mt-2 text-[18px] font-medium text-black">
                     {item.email}
                   </h3>
                 </div>
@@ -167,7 +167,7 @@ export default function ContactForm() {
               <div className="flex items-center gap-3">
                 <div className="h-3 w-3 rounded-full bg-emerald-500 animate-pulse" />
 
-                <h3 className="text-[32px] font-semibold text-black">
+                <h3 className="text-[20px] font-semibold text-black">
                   We respond within 24 hours.
                 </h3>
               </div>

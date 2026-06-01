@@ -7,7 +7,7 @@ export default function GrowthNetworkSection() {
       <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb] px-8 py-14 md:px-14">
         
         {/* GRID BACKGROUND */}
-        <div className="absolute inset-0 opacity-[0.35]">
+        <div className="absolute inset-0 opacity-[1.35]">
           <div
             className="h-full w-full"
             style={{
@@ -19,6 +19,29 @@ export default function GrowthNetworkSection() {
             }}
           />
         </div>
+        {/* TOP RIGHT BLUE */}
+<div
+  className="absolute right-[-180px] top-[-120px]"
+  style={{
+    width: "374px",
+    height: "374px",
+    background: "#7AA8FF",
+    filter: "blur(225px)",
+    opacity: 0.88,
+  }}
+/>
+
+{/* TOP RIGHT PURPLE */}
+<div
+  className="absolute right-[-120px] top-[-40px]"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(239.5px)",
+    opacity: 0.88,
+  }}
+/>
 
         {/* CONTENT */}
         <div className="relative z-10 grid items-center gap-16 lg:grid-cols-2">
@@ -43,7 +66,7 @@ export default function GrowthNetworkSection() {
           <div className="max-w-[620px]">
             
             {/* HEADING */}
-            <h2 className="text-[46px] font-medium leading-[0.95] tracking-[-0.05em] text-black md:text-[72px]">
+            <h2 className="text-[46px] font-medium leading-[0.95] tracking-[-0.05em] text-black md:text-[52px]">
               A network that grows with every real interaction
             </h2>
 
