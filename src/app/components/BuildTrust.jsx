@@ -9,8 +9,8 @@ export default function BuildTrust() {
 
           {/* EXPORTED FIGMA SECTION */}
           <Image
-            src="/images/build-trust-bg.jpg"
-            alt=""
+            src="/images/build-trust-bg2.jpg"
+            alt="trust"
             width={1230}
             height={560}
             priority
@@ -22,13 +22,13 @@ export default function BuildTrust() {
             <div className="ml-[53%] max-w-[440px]">
 
               <h2 className="leading-[0.9] tracking-[-0.065em]">
-  <span className="bg-[linear-gradient(90deg,#1F1F1F_0%,#6E6E6E_100%)] bg-clip-text text-[64px] font-medium text-transparent">
+  <span className="bg-[linear-gradient(90deg,#1F1F1F_0%,#6E6E6E_100%)] bg-clip-text text-[68px] font-medium text-transparent">
     Build trust from
   </span>
 
   <br />
 
-  <span className="bg-[linear-gradient(90deg,#4F76DA_0%,#2F5FC8_100%)] bg-clip-text text-[64px] font-medium text-transparent">
+  <span className="bg-[linear-gradient(90deg,#4F76DA_0%,#2F5FC8_100%)] bg-clip-text text-[68px] font-medium text-transparent">
     real world activity
   </span>
 </h2>

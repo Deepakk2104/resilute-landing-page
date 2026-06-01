@@ -38,7 +38,7 @@ export default function Contact() {
 
           {/* EXPORTED FIGMA BACKGROUND */}
           <Image
-            src="/images/contact-bg.png"
+            src="/images/contact-bg.jpg"
             alt=""
             width={1600}
             height={900}

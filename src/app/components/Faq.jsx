@@ -26,15 +26,55 @@ export default function Faq() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="faq" className="section-padding grid-bg">
-      <div className="section-container grid items-start gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
+    <section
+      id="faq"
+      className="section-padding grid-bg relative overflow-hidden"
+    >
+      {/* BACKGROUND GLOWS */}
+      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+        
+        {/* TOP RIGHT BLUE */}
+        <div
+          className="absolute right-[-80px] top-[-80px]"
+          style={{
+            width: "500px",
+            height: "500px",
+            background: "#7AA8FF",
+            filter: "blur(180px)",
+            opacity: 0.35,
+          }}
+        />
+
+        {/* TOP RIGHT PURPLE */}
+        <div
+          className="absolute right-[20px] top-[-20px]"
+          style={{
+            width: "600px",
+            height: "280px",
+            background: "#A39CEC",
+            filter: "blur(180px)",
+            opacity: 0.4,
+          }}
+        />
+
+        {/* BOTTOM LEFT BLUE */}
+        
+
+        {/* BOTTOM LEFT PURPLE */}
+       
+      </div>
+
+      <div className="section-container relative z-10 grid items-start gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
+        
         <div className="relative flex items-center justify-center lg:justify-start">
           <div className="pointer-events-none absolute -top-2 left-[18%] z-20 text-[44px] font-bold text-[#38bdf8] md:text-[52px]">
             ?
           </div>
+
           <div className="pointer-events-none absolute top-6 right-[22%] z-20 text-[30px] font-bold text-[#60a5fa] md:text-[36px]">
             ?
           </div>
+
           <div className="pointer-events-none absolute top-0 right-[38%] z-20 text-[22px] font-bold text-[#93c5fd] md:text-[26px]">
             ?
           </div>
@@ -42,18 +82,18 @@ export default function Faq() {
           <Image
             src="/images/faq.png"
             alt="Resilute robot"
-            width={680}
-            height={680}
-            className="relative z-10 w-full max-w-[420px] object-contain transition-transform duration-500 "
+            width={880}
+            height={880}
+            className="relative z-10 w-full max-w-[880px] object-contain"
           />
         </div>
 
         <div>
-          <h2 className="text-[32px] font-bold leading-tight text-black md:text-[40px] lg:text-[44px]">
+          <h2 className="text-[32px] font-medium leading-tight md:mt-25 text-black md:text-[40px] lg:text-[44px]">
             Frequently asked questions
           </h2>
 
-          <div className="mt-8 flex flex-col gap-4 md:mt-10 md:gap-5">
+          <div className="mt-8 flex flex-col gap-4 md:mt-15 md:gap-5">
             {faqs.map((faq, index) => {
               const isOpen = openIndex === index;
 
@@ -74,9 +114,10 @@ export default function Faq() {
                     }`}
                     aria-expanded={isOpen}
                   >
-                    <span className="text-[17px] font-bold md:text-[18px]">
+                    <span className="text-[17px] font-medium md:text-[18px]">
                       {faq.question}
                     </span>
+
                     {isOpen ? (
                       <ChevronUp
                         className="shrink-0"
@@ -104,6 +145,7 @@ export default function Faq() {
             })}
           </div>
         </div>
+
       </div>
     </section>
   );

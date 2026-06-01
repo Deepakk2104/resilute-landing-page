@@ -62,7 +62,6 @@ function TestimonialCard({
 
   return (
     <article className={`relative ${offset} pl-14 md:pl-16`}>
-      
       {/* AVATAR */}
       <div
         className={`absolute left-0 top-1/2 z-20 h-[72px] w-[72px] -translate-y-1/2 overflow-hidden rounded-full border-4 shadow-lg transition-transform duration-300 hover:scale-105 md:h-[80px] md:w-[80px] ${
@@ -96,7 +95,7 @@ function TestimonialCard({
         <div className="mt-5 flex items-end justify-between gap-4">
           <div>
             <p
-              className={`text-[16px] font-bold md:text-[17px] ${
+              className={`text-[16px] font-medium md:text-[17px] ${
                 isBlue ? "text-white" : "text-black"
               }`}
             >
@@ -121,11 +120,66 @@ function TestimonialCard({
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="section-padding grid-bg">
-      <div className="section-container grid items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-24">
+    <section
+      id="testimonials"
+      className="section-padding grid-bg relative overflow-hidden"
+    >
+      {/* BACKGROUND GLOWS */}
+      <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
+
+        {/* TOP RIGHT BLUE */}
+        <div
+          className="absolute right-[-80px] top-[-80px]"
+          style={{
+            width: "500px",
+            height: "500px",
+            background: "#7AA8FF",
+            filter: "blur(180px)",
+            opacity: 0.35,
+          }}
+        />
+
+        {/* TOP RIGHT PURPLE */}
+        <div
+          className="absolute right-[20px] top-[-20px]"
+          style={{
+            width: "600px",
+            height: "280px",
+            background: "#A39CEC",
+            filter: "blur(180px)",
+            opacity: 0.4,
+          }}
+        />
+
+        {/* BOTTOM LEFT BLUE */}
+        <div
+          className="absolute left-[-80px] bottom-[-80px]"
+          style={{
+            width: "500px",
+            height: "500px",
+            background: "#7AA8FF",
+            filter: "blur(180px)",
+            opacity: 0.35,
+          }}
+        />
+
+        {/* BOTTOM LEFT PURPLE */}
+        <div
+          className="absolute left-[-20px] bottom-[-20px]"
+          style={{
+            width: "600px",
+            height: "280px",
+            background: "#A39CEC",
+            filter: "blur(180px)",
+            opacity: 0.4,
+          }}
+        />
+      </div>
+
+      <div className="section-container relative z-10 grid items-center gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-24">
         
         <div className="max-w-[520px]">
-          <h2 className="text-[32px] font-bold leading-tight tracking-tight text-black md:text-[44px] lg:text-[48px]">
+          <h2 className="text-[32px] font-medium leading-tight tracking-tight text-black md:text-[44px] lg:text-[48px]">
             Built on trust. Backed by real world activity.
           </h2>
 
@@ -140,6 +194,7 @@ export default function Testimonials() {
             <TestimonialCard key={item.name} {...item} />
           ))}
         </div>
+
       </div>
     </section>
   );

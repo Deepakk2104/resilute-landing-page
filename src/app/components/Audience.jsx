@@ -32,10 +32,10 @@ export default function Audience() {
         >
           {/* Section Header */}
           <header className="text-center">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-gray-500 md:text-[12px]">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.25em] text-white md:text-[12px]">
               Who Resilute is for
             </p>
-            <h2 className="mx-auto mt-3 max-w-[800px] text-[32px] font-bold tracking-tight text-white md:text-[42px] lg:text-[48px]">
+            <h2 className="mx-auto mt-3 max-w-[1200px] text-[32px] semi-bold tracking-tight text-white md:text-[42px] lg:text-[48px]">
               Built for both sides of every interaction
             </h2>
           </header>
@@ -44,11 +44,30 @@ export default function Audience() {
           <div className="mt-12 grid gap-6 md:mt-16 md:grid-cols-2 md:gap-8 items-start justify-center max-w-[1100px] mx-auto">
             
             {/* FIRST CARD: CUSTOMERS (Mapped exactly to your Figma dimensions & layout) */}
-            <article className="relative overflow-hidden bg-[#000000] rounded-[16px] p-10 flex flex-col justify-between select-none border border-white/[0.03] w-full max-w-[522px] min-h-[443px]">
+            <article
+  className="
+    relative
+    overflow-hidden
+    rounded-[16px]
+    p-10
+    flex
+    flex-col
+    justify-between
+    select-none
+    border
+    border-white/[0.03]
+    w-full
+    max-w-[522px]
+    min-h-[443px]
+  "
+  style={{
+    background: "#000000",
+  }}
+>
               
               {/* Figma: Ellipse 2464 (Bottom-Left Glow) */}
               <div 
-                className="absolute rounded-full pointer-events-none mix-blend-screen"
+                className="absolute rounded-full pointer-events-none"
                 style={{
                   width: "384px",
                   height: "215px",
@@ -61,7 +80,7 @@ export default function Audience() {
               
               {/* Figma: Ellipse 2465 (Top-Right Glow) */}
               <div 
-                className="absolute rounded-full pointer-events-none mix-blend-screen"
+                className="absolute rounded-full pointer-events-none"
                 style={{
                   width: "384px",
                   height: "215px",
@@ -80,9 +99,13 @@ export default function Audience() {
                 </p>
 
                 {/* Figma: cf (Icon Wrapper) */}
-                <div className="mt-6 flex h-[64px] w-[64px] items-center justify-center rounded-[14px] bg-gradient-to-b from-[#2350AD] to-[#1A3D8F] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1),0px_4px_6px_-4px_rgba(0,0,0,0.1)]">
-                  <User className="text-white" size={32} strokeWidth={2.2} />
-                </div>
+                <div className="mt-6">
+  <img
+    src="/images/cf.png"
+    alt="Customer"
+    className="h-[84px] w-[84px] object-contain"
+  />
+</div>
 
                 {/* Figma: Title with Linear Text Clip Gradient */}
                 <h3 className="mt-8 font-bold text-[24px] bg-gradient-to-tr from-white/20 via-white to-white bg-clip-text text-transparent max-w-[406px] leading-[30px]">
@@ -112,19 +135,76 @@ export default function Audience() {
             </article>
 
             {/* SECOND CARD: MERCHANTS (Parity Layout with Inter font updates) */}
-         <article className="relative overflow-hidden rounded-[28px] p-10 flex flex-col justify-between shadow-xl w-full max-w-[522px] min-h-[443px] border border-white/40">
-      {/* Exact Premium Vibrant Mesh Background */}
-      <div
-        className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.01]"
-        style={{
-          background: `
-            radial-gradient(circle at 80% 10%, #c084fc 0%, transparent 60%),
-            radial-gradient(circle at 100% 70%, #6366f1 0%, transparent 50%),
-            radial-gradient(circle at 10% 80%, #d8b4fe 0%, transparent 60%),
-            linear-gradient(135deg, #eef2ff 0%, #ffffff 50%, #f5f3ff 100%)
-          `,
-        }}
-      />
+        <article
+  className="relative overflow-hidden rounded-[16px] p-10 flex flex-col justify-between w-full max-w-[522px] min-h-[443px]"
+  style={{
+    background: "#F8F4FF",
+  }}
+>
+  {/* PURPLE BASE */}
+<div
+  className="absolute inset-0"
+  style={{
+    background: "#B557FA",
+    opacity: 0.18,
+  }}
+/>
+
+{/* LARGE PURPLE GLOW */}
+<div
+  className="absolute pointer-events-none"
+  style={{
+    width: "520px",
+    height: "520px",
+    left: "-110px",
+    top: "-130px",
+    background: "#B557FA",
+    filter: "blur(128px)",
+    opacity: 0.55,
+  }}
+/>
+
+{/* CENTER WHITE GLOW */}
+<div
+  className="absolute pointer-events-none"
+  style={{
+    width: "420px",
+    height: "420px",
+    left: "80px",
+    top: "20px",
+    background: "#FFFFFF",
+    filter: "blur(50px)",
+    opacity: 0.9,
+  }}
+/>
+
+{/* BOTTOM RIGHT BLUE GLOW */}
+<div
+  className="absolute pointer-events-none"
+  style={{
+    width: "384px",
+    height: "215px",
+    left: "365px",
+    top: "277px",
+    background: "#2350AD",
+    filter: "blur(90px)",
+  }}
+/>
+
+{/* TOP LEFT BLUE GLOW */}
+<div
+  className="absolute pointer-events-none"
+  style={{
+    width: "384px",
+    height: "215px",
+    left: "-138px",
+    top: "-108px",
+    background: "#2350AD",
+    filter: "blur(90px)",
+  }}
+/>
+    
+      
       
       {/* Content Layer */}
       <div className="relative z-10 flex flex-col h-full justify-between items-start">
@@ -132,14 +212,18 @@ export default function Audience() {
         {/* Top Content Block */}
         <div className="w-full">
           {/* Subtitle */}
-          <p className="font-semibold text-[13px] uppercase text-[#475569] tracking-[1.5px] leading-[16px]">
-            For Merchants
-          </p>
+         <p className="text-[12px] font-semibold uppercase tracking-[1.44px] text-white">
+  FOR MERCHANTS
+</p>
           
           {/* Icon Box */}
-          <div className="mt-5 flex h-[68px] w-[68px] items-center justify-center rounded-[18px] bg-[#1d4ed8] text-white shadow-md shadow-blue-900/20">
-            <Store size={30} strokeWidth={2} />
-          </div>
+          <div className="mt-5">
+  <img
+    src="/images/cfc.png"
+    alt="Merchant"
+    className="h-[84px] w-[84px] object-contain"
+  />
+</div>
 
           {/* Heading */}
           <h3 className="mt-7 font-bold text-[28px] text-black max-w-[420px] tracking-[-0.5px] leading-[34px]">
@@ -174,21 +258,32 @@ export default function Audience() {
           <div className="mt-16 grid gap-8 border-t border-white/[0.06] pt-12 md:grid-cols-3 md:gap-8 max-w-[1100px] mx-auto">
             {bottomFeatures.map((feature) => (
               <div
-                key={feature.title}
-                className="group flex items-start gap-4 transition-opacity duration-300 md:flex-col md:gap-3"
-              >
-                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#3F73D8]/15 text-[#6B9AE8] transition-colors duration-300 group-hover:bg-[#3F73D8]/25">
-                  <Check size={15} strokeWidth={3} />
-                </div>
-                <div>
-                  <h4 className="text-[16px] font-bold text-white md:text-[18px]">
-                    {feature.title}
-                  </h4>
-                  <p className="mt-1.5 text-[14px] leading-relaxed text-gray-500">
-                    {feature.description}
-                  </p>
-                </div>
-              </div>
+  key={feature.title}
+  className="group transition-opacity duration-300"
+>
+  <div className="flex items-center gap-3">
+    <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[#2350AD] bg-[#2350AD]/10 text-[#3F73D8]">
+      <Check size={14} strokeWidth={3} />
+    </div>
+
+    <h4
+      className="
+        text-[16px]
+        font-bold
+        bg-[linear-gradient(238.38deg,#FFFFFF_55.63%,rgba(255,255,255,0)_110.73%)]
+        bg-clip-text
+        text-transparent
+        md:text-[18px]
+      "
+    >
+      {feature.title}
+    </h4>
+  </div>
+
+  <p className="mt-3 pl-10 max-w-[280px] text-[14px] leading-relaxed text-white/80">
+    {feature.description}
+  </p>
+</div>
             ))}
           </div>
 

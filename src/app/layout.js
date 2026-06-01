@@ -18,6 +18,10 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} h-full antialiased`}
     >
+      <head>
+        <meta name="color-scheme" content="light" />
+      </head>
+
       <body className="min-h-full flex flex-col font-[var(--font-inter)]">
         {children}
       </body>
