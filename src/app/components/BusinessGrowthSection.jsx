@@ -3,7 +3,7 @@ import JoinWaitlistButton from "./JoinWaitlistButton";
 
 export default function BusinessGrowthSection() {
   return (
-    <section className="px-4 py-10">
+    <section className="px-4 py-10 md:py-14">
       <div className="relative overflow-visible rounded-[42px]">
 
         {/* FIGMA BACKGROUND EXPORT */}
@@ -17,7 +17,7 @@ export default function BusinessGrowthSection() {
         />
 
         {/* CONTENT */}
-        <div className="absolute inset-0 flex flex-col items-center text-center">
+        <div className="absolute inset-0 z-10 flex flex-col items-center text-center px-4">
 
           {/* LABEL */}
           <p className="mt-[34px] flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-white">
@@ -26,7 +26,7 @@ export default function BusinessGrowthSection() {
           </p>
 
           {/* HEADING */}
-        <h2 className="mt-6 pb-2 text-center text-[72px] font-medium leading-[1.16] tracking-[-0.055em]">
+       <h2 className="mt-4 pb-2 text-center text-[34px] font-medium leading-[1.1] tracking-[-0.055em] sm:text-[42px] md:mt-6 md:text-[56px] lg:text-[72px]">
   <span className="block text-white">
     Turn real-world engagement
   </span>
@@ -44,12 +44,29 @@ export default function BusinessGrowthSection() {
 </h2>
 
           {/* BUTTON */}
-          <div className="mt-8">
-            <JoinWaitlistButton />
-          </div>
+         <div className="mt-6 md:mt-8">
+  <JoinWaitlistButton />
+</div>
 
           {/* ROBOT */}
-          <div className="absolute bottom-[-110px] left-1/2 w-[1050px] -translate-x-1/2">
+          <div
+  className="
+    absolute
+    left-1/2
+    -translate-x-1/2
+    z-0
+
+    bottom-[-30px]
+    sm:bottom-[-50px]
+    md:bottom-[-70px]
+    lg:bottom-[-110px]
+
+    w-[420px]
+    sm:w-[600px]
+    md:w-[760px]
+    lg:w-[1050px]
+  "
+>
   <Image
     src="/images/business-growth.png"
     alt="Business Growth Robot"
