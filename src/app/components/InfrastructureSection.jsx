@@ -19,12 +19,12 @@ export default function InfrastructureSection() {
         {/* CONTENT */}
         <div className="absolute inset-0">
 
-          <div className="absolute right-[8%] top-[16%] max-w-[520px]">
+          <div className="absolute right-[14%] top-[16%] max-w-[520px]">
 
             {/* HEADING */}
             <h2 className="leading-[1.3] tracking-[-0.06em]">
 
-              <div className="text-[72px] font-medium text-[#2F2F2F]">
+              <div className="text-[58px] font-medium text-[#2F2F2F]">
                 We&apos;re not
               </div>
 
@@ -32,7 +32,7 @@ export default function InfrastructureSection() {
                 className="
                   bg-[linear-gradient(90deg,#2F2F2F_0%,#8F8F8F_100%)]
                   bg-clip-text
-                  text-[72px]
+                  text-[58px]
                   font-medium
                   text-transparent
                 "
@@ -45,9 +45,9 @@ export default function InfrastructureSection() {
                   mt-8
                   bg-[linear-gradient(90deg,#4D73E6_0%,#335FCB_55%,#5E7FD7_100%)]
                   bg-clip-text
-                  text-[72px]
+                  text-[58px]
                   font-medium
-                  leading-[0.95]
+                  leading-[1.2]
                   text-transparent
                 "
               >
@@ -58,7 +58,7 @@ export default function InfrastructureSection() {
                 className="
                   bg-[linear-gradient(90deg,#4D73E6_0%,#335FCB_55%,#5E7FD7_100%)]
                   bg-clip-text
-                  text-[72px]
+                  text-[58px]
                   font-medium
                   leading-[0.95]
                   text-transparent

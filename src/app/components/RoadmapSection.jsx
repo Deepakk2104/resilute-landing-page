@@ -51,7 +51,7 @@ export default function RoadmapSection() {
       <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb] px-8 py-16 md:px-14">
         
         {/* GRID BACKGROUND */}
-        <div className="absolute inset-0 opacity-[0.35]">
+        <div className="absolute inset-0 opacity-[0.75]">
           <div
             className="h-full w-full"
             style={{
@@ -63,6 +63,29 @@ export default function RoadmapSection() {
             }}
           />
         </div>
+        {/* TOP LEFT PURPLE GLOW */}
+<div
+  className="absolute left-[-180px] top-[80px]"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(240px)",
+    opacity: 0.65,
+  }}
+/>
+
+{/* TOP RIGHT PURPLE GLOW */}
+<div
+  className="absolute right-[-180px] top-[80px]"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(240px)",
+    opacity: 0.65,
+  }}
+/>
 
         {/* CONTENT */}
         <div className="relative z-10">
@@ -74,7 +97,7 @@ export default function RoadmapSection() {
               OUR ROADMAP
             </p>
 
-            <h2 className="mt-6 text-[48px] font-medium leading-[1] tracking-[-0.05em] text-black md:text-[72px]">
+            <h2 className="mt-6 text-[48px] font-medium leading-[1] tracking-[-0.05em] text-black md:text-[52px]">
               Where we’re going
             </h2>
 
@@ -108,7 +131,7 @@ export default function RoadmapSection() {
                     }`}
                   >
                     
-                    <h3 className="text-[42px] font-medium leading-[0.95] tracking-[-0.05em] text-black">
+                    <h3 className="text-[36px] font-medium leading-[0.95] tracking-[-0.05em] text-black">
                       {item.title}
                     </h3>
 
@@ -140,13 +163,13 @@ export default function RoadmapSection() {
           </div>
 
           {/* BOTTOM */}
-          <div className="mx-auto mt-28 max-w-[1200px] text-center">
+        <div className="mx-auto mt-28 max-w-[1200px] rounded-[24px] bg-[#f7f8fb] px-8 py-8 text-center">
             
             <p className="text-[14px] font-semibold uppercase tracking-[0.24em] text-[#4D73E6]">
               LONG-TERM VISION
             </p>
 
-            <p className="mx-auto mt-8 max-w-[1100px] text-[28px] leading-relaxed text-[#555] md:text-[40px]">
+            <p className="mx-auto mt-8 max-w-[1100px] text-[28px] leading-relaxed text-[#555] md:text-[24px]">
               Establishing the bedrock of autonomous coordination and verified identity.
             </p>
           </div>

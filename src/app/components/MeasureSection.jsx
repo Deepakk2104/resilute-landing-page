@@ -41,7 +41,7 @@ export default function MeasureSection() {
       <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb] px-8 py-14 md:px-14">
         
         {/* GRID BACKGROUND */}
-        <div className="absolute inset-0 opacity-[0.35]">
+        <div className="absolute inset-0 opacity-[0.85]">
           <div
             className="h-full w-full"
             style={{
@@ -53,6 +53,53 @@ export default function MeasureSection() {
             }}
           />
         </div>
+        {/* LEFT PURPLE GLOW */}
+<div
+  className="absolute left-[-180px] top-[320px]"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(239.5px)",
+    opacity: 0.45,
+  }}
+/>
+
+{/* RIGHT PURPLE GLOW */}
+<div
+  className="absolute right-[-180px] top-[320px]"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(239.5px)",
+    opacity: 0.45,
+  }}
+/>
+
+{/* BOTTOM CENTER BLUE */}
+<div
+  className="absolute left-1/2 bottom-[-120px] -translate-x-1/2"
+  style={{
+    width: "374px",
+    height: "374px",
+    background: "#7AA8FF",
+    filter: "blur(225px)",
+    opacity: 0.22,
+  }}
+/>
+
+{/* BOTTOM CENTER PURPLE */}
+<div
+  className="absolute left-1/2 bottom-[-80px] -translate-x-1/2"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(239.5px)",
+    opacity: 0.32,
+  }}
+/>
 
         {/* CONTENT */}
         <div className="relative z-10">
@@ -60,7 +107,7 @@ export default function MeasureSection() {
           {/* TOP */}
           <div className="mx-auto max-w-[950px] text-center">
             
-            <h2 className="text-[42px] font-medium leading-[1] tracking-[-0.05em] text-black md:text-[64px]">
+            <h2 className="text-[42px] font-medium leading-[1] tracking-[-0.05em] text-black md:text-[50px]">
               Measure what actually happens
             </h2>
 

@@ -24,7 +24,7 @@ export default function AboutFinalSection() {
             {/* HEADING */}
             <h2 className="leading-[0.92] tracking-[-0.06em]">
 
-              <div className="text-[72px] font-medium text-[#2F2F2F]">
+              <div className="text-[58px] font-medium text-[#2F2F2F]">
                 Build with
               </div>
 
@@ -32,7 +32,7 @@ export default function AboutFinalSection() {
                 className="
                   bg-[linear-gradient(90deg,#2F2F2F_0%,#8D8D8D_100%)]
                   bg-clip-text
-                  text-[72px]
+                  text-[58px]
                   font-medium
                   text-transparent
                   leading-[0.92]
@@ -45,7 +45,7 @@ export default function AboutFinalSection() {
                 className="
                   bg-[linear-gradient(90deg,#4D73E6_0%,#335FCB_55%,#4D73E6_100%)]
                   bg-clip-text
-                  text-[72px]
+                  text-[58px]
                   font-medium
                   text-transparent
                   leading-[0.92]
@@ -63,9 +63,61 @@ export default function AboutFinalSection() {
             </p>
 
             {/* BUTTON */}
-            <div className="mt-10">
-              <JoinWaitlistButton text="Get early access" />
-            </div>
+            <button
+  className="
+    group
+    mt-10
+    flex
+    h-[45px]
+    items-center
+    gap-2
+    rounded-full
+    bg-[linear-gradient(90.76deg,#2350AD_0.11%,#719AEF_99.89%)]
+
+    pl-5
+    pr-2
+
+    text-[16px]
+    font-semibold
+    text-white
+
+    shadow-[0_6px_18px_rgba(35,80,173,0.18)]
+
+    transition-all
+    duration-300
+
+    hover:-translate-y-1
+    hover:scale-[1.03]
+    hover:brightness-110
+    hover:shadow-[0_12px_30px_rgba(35,80,173,0.35)]
+
+    active:scale-[0.98]
+  "
+>
+  Get early access
+
+  <span
+    className="
+      flex
+      h-[32px]
+      w-[32px]
+      items-center
+      justify-center
+      rounded-full
+      bg-white
+      text-[20px]
+      text-[#2350AD]
+
+      transition-all
+      duration-300
+
+      group-hover:translate-x-1
+      group-hover:scale-110
+    "
+  >
+    →
+  </span>
+</button>
 
           </div>
 

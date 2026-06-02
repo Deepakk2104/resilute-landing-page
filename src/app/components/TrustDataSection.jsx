@@ -26,7 +26,7 @@ export default function TrustDataSection() {
       <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb] px-8 py-14 md:px-14">
         
         {/* GRID BACKGROUND */}
-        <div className="absolute inset-0 opacity-[0.35]">
+        <div className="absolute inset-0 opacity-[0.85]">
           <div
             className="h-full w-full"
             style={{
@@ -38,6 +38,29 @@ export default function TrustDataSection() {
             }}
           />
         </div>
+        {/* CENTER BLUE GLOW */}
+<div
+  className="absolute left-1/2 top-[420px] -translate-x-1/2"
+  style={{
+    width: "374px",
+    height: "374px",
+    background: "#7AA8FF",
+    filter: "blur(225px)",
+    opacity: 0.55,
+  }}
+/>
+
+{/* CENTER PURPLE GLOW */}
+<div
+  className="absolute left-1/2 top-[450px] -translate-x-1/2"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(239.5px)",
+    opacity: 0.55,
+  }}
+/>
 
         {/* CONTENT */}
         <div className="relative z-10">
@@ -45,7 +68,7 @@ export default function TrustDataSection() {
           {/* TOP */}
           <div className="mx-auto max-w-[900px] text-center">
             
-            <h2 className="text-[42px] font-medium leading-[1] tracking-[-0.05em] text-black md:text-[64px]">
+            <h2 className="text-[42px] font-medium leading-[1] tracking-[-0.05em] text-black md:text-[50px]">
               You can’t grow with data you can’t trust
             </h2>
 
@@ -66,9 +89,13 @@ export default function TrustDataSection() {
               >
                 
                 {/* ICON */}
-                <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-4 border-[#2D5BDB] text-[20px] text-[#2D5BDB] transition-transform duration-300 group-hover:scale-110">
-                  <FaCircleXmark />
-                </div>
+                <div className="flex h-14 w-14 shrink-0 items-center justify-center transition-transform duration-300 group-hover:scale-110">
+  <img
+    src="/images/cross.png"
+    alt={card.title}
+    className="h-14 w-14 object-contain"
+  />
+</div>
 
                 {/* TEXT */}
                 <div>

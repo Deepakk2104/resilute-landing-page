@@ -90,7 +90,7 @@ export default function ValuesSection() {
                 </div>
 
                 {/* TITLE */}
-                <h3 className="mt-8 text-[30px] font-semibold leading-[1.1] tracking-[-0.03em] text-black">
+                <h3 className="mt-8 text-[24px] font-semibold leading-[1.1] tracking-[-0.03em] text-black">
                   {value.title}
                 </h3>
 

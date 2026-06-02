@@ -21,7 +21,7 @@ export default function FinalCtaSection() {
           <div className="absolute left-[72px] top-1/2 -translate-y-1/2">
 
             {/* HEADING */}
-            <h2 className="max-w-[680px] leading-[0.95] tracking-[-0.06em]">
+            <h2 className="max-w-[880px] leading-[0.95] tracking-[-0.06em]">
 
               <div className="bg-[linear-gradient(90deg,#1F1F1F_0%,#7E7E7E_100%)] bg-clip-text text-[72px] font-medium text-transparent">
                 Ready to see how it works

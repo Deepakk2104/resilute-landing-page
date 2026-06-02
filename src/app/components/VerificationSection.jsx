@@ -8,17 +8,17 @@ import { MdGpsFixed } from "react-icons/md";
 export default function VerificationSection() {
   const features = [
     {
-      icon: <FaLocationDot />,
+      icon: "/images/location.png",
       title: "Location verification",
       desc: "Confirms presence using precise location signals within a defined area.",
     },
     {
-      icon: <FaBluetoothB />,
+      icon: "/images/device.png",
       title: "Device proximity",
       desc: "Uses short-range signals to verify the user is physically near the location.",
     },
     {
-      icon: <FaShieldHalved />,
+      icon: "/images/trans.png",
       title: "Transaction confirmation",
       desc: "Validates real activity through confirmed actions like purchases or check-ins.",
     },
@@ -38,7 +38,7 @@ export default function VerificationSection() {
           </p>
 
           {/* TITLE */}
-          <h2 className="mt-6 max-w-[620px] text-[52px] font-medium leading-[0.95] tracking-[-0.05em] text-black md:text-[74px]">
+          <h2 className="mt-6 max-w-[620px] text-[52px] font-medium leading-[0.95] tracking-[-0.05em] text-black md:text-[54px]">
             How we know you&apos;re really there
           </h2>
 
@@ -58,17 +58,21 @@ export default function VerificationSection() {
                 className="group flex gap-6"
               >
                 {/* ICON */}
-                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-[#eef2ff] text-2xl text-[#4D73E6] transition-all duration-300 group-hover:scale-110">
-                  {item.icon}
-                </div>
+               <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-[#eef2ff] transition-all duration-300 group-hover:scale-110">
+  <img
+    src={item.icon}
+    alt={item.title}
+    className="h-15 w-15 object-contain"
+  />
+</div>
 
                 {/* TEXT */}
                 <div>
-                  <h3 className="text-[30px] font-semibold text-black">
+                  <h3 className="text-[22px] font-semibold text-black">
                     {item.title}
                   </h3>
 
-                  <p className="mt-3 max-w-[560px] text-[22px] leading-relaxed text-[#666]">
+                  <p className="mt-3 max-w-[560px] text-[18px] leading-relaxed text-[#666]">
                     {item.desc}
                   </p>
                 </div>
@@ -82,14 +86,18 @@ export default function VerificationSection() {
 <div className="relative flex justify-center">
   
   {/* MAIN PANEL */}
-  <div className="relative flex w-full max-w-[620px] flex-col items-center rounded-[40px] bg-white p-12 shadow-[0_30px_80px_rgba(0,0,0,0.08)]">
+  <div className="relative flex w-full max-w-[540px] flex-col items-center rounded-[40px] bg-white p-12 shadow-[0_30px_80px_rgba(0,0,0,0.08)]">
     
     {/* TOP CARD */}
     <div className="flex w-full max-w-[480px] items-center justify-between rounded-[24px] bg-white px-8 py-6 shadow-[0_15px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
       
       <div className="flex items-center gap-5">
         <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#eefbf0] text-[#6ddc7d]">
-          ✓
+          <img
+  src="/images/tick.png"
+  alt="Verified"
+  className="h-15 w-15 object-contain"
+/>
         </div>
 
         <div>
@@ -97,7 +105,7 @@ export default function VerificationSection() {
             Final Validation
           </p>
 
-          <h4 className="mt-1 text-[24px] font-semibold text-black">
+          <h4 className="mt-1 text-[18px] font-semibold text-black">
             Verified Action
           </h4>
         </div>
@@ -113,7 +121,11 @@ export default function VerificationSection() {
       
       <div className="flex items-center gap-5">
         <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#eef8ff] text-[#4D73E6]">
-          <FaBluetoothB />
+          <img
+  src="/images/bluetooth.png"
+  alt="Bluetooth"
+  className="h-15 w-15 object-contain"
+/>
         </div>
 
         <div>
@@ -121,7 +133,7 @@ export default function VerificationSection() {
             Hardware Handshake
           </p>
 
-          <h4 className="mt-1 text-[24px] font-semibold text-black">
+          <h4 className="mt-1 text-[18px] font-semibold text-black">
             Bluetooth / NaC
           </h4>
         </div>
@@ -137,7 +149,11 @@ export default function VerificationSection() {
       
       <div className="flex items-center gap-5">
         <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#eef2ff] text-[#4D73E6]">
-          <MdGpsFixed />
+          <img
+  src="/images/gps.png"
+  alt="GPS"
+  className="h-15 w-15 object-contain"
+/>
         </div>
 
         <div>
@@ -145,7 +161,7 @@ export default function VerificationSection() {
             Global Positioning
           </p>
 
-          <h4 className="mt-1 text-[24px] font-semibold text-black">
+          <h4 className="mt-1 text-[18px] font-semibold text-black">
             GPS Signal
           </h4>
         </div>

@@ -8,7 +8,7 @@ export default function RewardsSection() {
       <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb] px-8 py-16 md:px-14">
         
         {/* GRID BACKGROUND */}
-        <div className="absolute inset-0 opacity-[0.35]">
+        <div className="absolute inset-0 opacity-[0.95]">
           <div
             className="h-full w-full"
             style={{
@@ -20,6 +20,17 @@ export default function RewardsSection() {
             }}
           />
         </div>
+        {/* BOTTOM RIGHT PURPLE GRADIENT */}
+<div
+  className="absolute right-[-180px] bottom-[-80px]"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(239.5px)",
+    opacity: 0.95,
+  }}
+/>
 
         {/* TOP CONTENT */}
         <div className="relative z-10 mx-auto max-w-[1100px] text-center">
@@ -30,12 +41,12 @@ export default function RewardsSection() {
           </p>
 
           {/* HEADING */}
-          <h2 className="mt-6 text-[58px] font-medium leading-[0.95] tracking-[-0.06em] text-black md:text-[88px]">
+          <h2 className="mt-6 text-[58px] font-medium leading-[0.95] tracking-[-0.06em] text-black md:text-[62px]">
             Everyone earns. Both sides grow
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="mx-auto mt-8 max-w-[1000px] text-[24px] leading-relaxed text-[#666]">
+          <p className="mx-auto mt-8 max-w-[1000px] text-[20px] leading-relaxed text-[#666]">
             When a verified interaction happens at a Resilute location,
             both parties receive participation points that count toward
             the token airdrop

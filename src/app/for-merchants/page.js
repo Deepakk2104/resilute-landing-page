@@ -7,7 +7,7 @@ import MeasureSection from "../components/MeasureSection";
 import BusinessWorkflowSection from "../components/BusinessWorkflowSection";
 import RealCustomersSection from "../components/RealCustomersSection";
 import PricingSection from "../components/PricingSection";
-import FaqSection from "../components/FaqSection";
+import AboutFaqSection from "../components/AboutFaqSection";
 import BusinessCTASection from "../components/BusinessCTASection";
 export default function ForMerchantsPage() {
   return (
@@ -21,7 +21,7 @@ export default function ForMerchantsPage() {
         <BusinessWorkflowSection />
         <RealCustomersSection />
         <PricingSection />
-        <FaqSection />
+       <AboutFaqSection />
         <BusinessCTASection />
       </main>
 

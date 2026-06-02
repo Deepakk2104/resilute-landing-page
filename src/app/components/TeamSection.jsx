@@ -28,7 +28,7 @@ export default function TeamSection() {
       <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb] px-8 py-16 md:px-14">
         
         {/* GRID BACKGROUND */}
-        <div className="absolute inset-0 opacity-[0.35]">
+        <div className="absolute inset-0 opacity-[1.5]">
           <div
             className="h-full w-full"
             style={{
@@ -40,6 +40,53 @@ export default function TeamSection() {
             }}
           />
         </div>
+        {/* TOP LEFT */}
+<div
+  className="absolute left-[-180px] top-[-60px]"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(240px)",
+    opacity: 0.5,
+  }}
+/>
+
+{/* TOP RIGHT */}
+<div
+  className="absolute right-[-180px] top-[-60px]"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(240px)",
+    opacity: 0.5,
+  }}
+/>
+
+{/* BOTTOM LEFT */}
+<div
+  className="absolute left-[-180px] bottom-[-60px]"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(240px)",
+    opacity: 0.5,
+  }}
+/>
+
+{/* BOTTOM RIGHT */}
+<div
+  className="absolute right-[-180px] bottom-[-60px]"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(240px)",
+    opacity: 0.5,
+  }}
+/>
 
         {/* CONTENT */}
         <div className="relative z-10">
@@ -51,7 +98,7 @@ export default function TeamSection() {
               TEAM
             </p>
 
-            <h2 className="mt-6 text-[46px] font-medium leading-[1] tracking-[-0.05em] text-black md:text-[68px]">
+            <h2 className="mt-6 text-[46px] font-medium leading-[1] tracking-[-0.05em] text-black md:text-[50px]">
               Meet the Architects
             </h2>
           </div>

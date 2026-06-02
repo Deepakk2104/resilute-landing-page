@@ -24,7 +24,7 @@ export default function BusinessCTASection() {
             {/* HEADING */}
             <h2 className="leading-[0.92] tracking-[-0.065em]">
 
-              <div className="text-[76px] font-medium text-[#2F2F2F]">
+              <div className="text-[52px] font-medium text-[#2F2F2F]">
                 Start
                 <span
                   className="
@@ -37,7 +37,7 @@ export default function BusinessCTASection() {
                 </span>
               </div>
 
-              <div className="text-[76px] font-medium text-[#2F2F2F]">
+              <div className="text-[52px] font-medium text-[#2F2F2F]">
                 what actually
               </div>
 
@@ -46,7 +46,7 @@ export default function BusinessCTASection() {
                   mt-2
                   bg-[linear-gradient(90deg,#4D73E6_0%,#2F57C5_55%,#7E99DE_100%)]
                   bg-clip-text
-                  text-[76px]
+                  text-[52px]
                   font-medium
                   text-transparent
                 "

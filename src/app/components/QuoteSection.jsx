@@ -7,7 +7,7 @@ export default function QuoteSection() {
 
         {/* FIGMA BACKGROUND EXPORT */}
         <Image
-          src="/images/quote-bg.png"
+          src="/images/quote-bg1.png"
           alt=""
           width={1600}
           height={700}
@@ -21,20 +21,15 @@ export default function QuoteSection() {
           <div className="max-w-[980px] text-center">
 
             <h2 className="text-[38px] font-medium leading-[1.18] tracking-[-0.04em] text-white">
-
-              “By building in Phase 1, you aren&apos;t just completing
-
-              <span className="bg-[linear-gradient(90deg,#C9CDD5_0%,#8F97A8_100%)] bg-clip-text text-transparent">
-                {" "}tasks; you are securing your foundational stake in
-              </span>
-
-              <br />
-
-              <span className="bg-[linear-gradient(90deg,#C9CDD5_0%,#8F97A8_100%)] bg-clip-text text-transparent">
-                the entire ecosystem&apos;s future.”
-              </span>
-
-            </h2>
+  “By building in Phase 1, you aren&apos;t just completing
+  <span className="bg-[linear-gradient(90deg,#C9CDD5_0%,#8F97A8_100%)] bg-clip-text text-white">
+    {" "}tasks you are securing your foundational stake in
+  </span>
+  <br />
+  <span className="bg-[linear-gradient(90deg,#C9CDD5_0%,#8F97A8_100%)] bg-clip-text text-white">
+    the entire ecosystem&apos;s future.”
+  </span>
+</h2>
 
           </div>
 

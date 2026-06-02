@@ -26,7 +26,7 @@ export default function MissionSection() {
       <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb] px-8 py-16 md:px-14">
 
         {/* GRID BACKGROUND */}
-        <div className="absolute inset-0 opacity-[0.35]">
+        <div className="absolute inset-0 opacity-[0.75]">
           <div
             className="h-full w-full"
             style={{
@@ -38,6 +38,29 @@ export default function MissionSection() {
             }}
           />
         </div>
+        {/* CENTER BLUE GLOW */}
+<div
+  className="absolute left-1/2 top-[58%] -translate-x-1/2 -translate-y-1/2"
+  style={{
+    width: "374px",
+    height: "374px",
+    background: "#7AA8FF",
+    filter: "blur(225px)",
+    opacity: 0.22,
+  }}
+/>
+
+{/* CENTER PURPLE GLOW */}
+<div
+  className="absolute left-1/2 top-[58%] -translate-x-1/2 -translate-y-1/2"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(239.5px)",
+    opacity: 0.32,
+  }}
+/>
 
         {/* CONTENT */}
         <div className="relative z-10">
@@ -48,7 +71,7 @@ export default function MissionSection() {
               OUR MISSION
             </p>
 
-            <h2 className="mt-6 text-[44px] font-medium leading-[1] tracking-[-0.05em] text-black md:text-[68px]">
+            <h2 className="mt-6 text-[44px] font-medium leading-[1] tracking-[-0.05em] text-black md:text-[52px]">
               Make real-world participation count
             </h2>
 

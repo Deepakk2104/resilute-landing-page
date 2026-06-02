@@ -1,9 +1,11 @@
+import { BadgeCheck } from "lucide-react";
 import {
   FaEnvelope,
   FaChartLine,
   FaNewspaper,
   FaLinkedin,
   FaXTwitter,
+  FaCertificate,
 } from "react-icons/fa6";
 
 export default function ContactForm() {
@@ -131,6 +133,11 @@ export default function ContactForm() {
                 email: "hello@resilute.com",
               },
               {
+                icon: <BadgeCheck />,
+                title: "MERCHANT APPLICATIONS",
+                email: "merchants@resilute.com",
+              },
+              {
                 icon: <FaChartLine />,
                 title: "INVESTOR RELATIONS",
                 email: "investors@resilute.com",
@@ -139,7 +146,8 @@ export default function ContactForm() {
                 icon: <FaNewspaper />,
                 title: "PRESS AND MEDIA",
                 email: "press@resilute.com",
-              },
+              }, 
+              
             ].map((item, index) => (
               <div
                 key={index}

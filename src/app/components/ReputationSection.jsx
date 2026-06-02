@@ -160,7 +160,7 @@ export default function ReputationSection() {
             </p>
 
             {/* HEADING */}
-            <h2 className="mt-6 max-w-[555px] text-[58px] font-medium leading-[0.92] tracking-[-0.06em] text-black md:text-[88px]">
+            <h2 className="mt-6 max-w-[555px] text-[48px] font-medium leading-[0.92] tracking-[-0.06em] text-black md:text-[78px]">
               Not all participation is equal
             </h2>
 

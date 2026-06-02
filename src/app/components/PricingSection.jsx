@@ -13,7 +13,7 @@ export default function PricingSection() {
       <div className="relative overflow-hidden rounded-[42px] bg-[#f7f8fb] px-8 py-16 md:px-14">
         
         {/* GRID BACKGROUND */}
-        <div className="absolute inset-0 opacity-[0.35]">
+        <div className="absolute inset-0 opacity-[0.85]">
           <div
             className="h-full w-full"
             style={{
@@ -25,6 +25,29 @@ export default function PricingSection() {
             }}
           />
         </div>
+        {/* LEFT SIDE GLOW */}
+<div
+  className="absolute left-[-220px] top-1/2 -translate-y-1/2"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(240px)",
+    opacity: 0.55,
+  }}
+/>
+
+{/* RIGHT SIDE GLOW */}
+<div
+  className="absolute right-[-220px] top-1/2 -translate-y-1/2"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(240px)",
+    opacity: 0.55,
+  }}
+/>
 
         {/* CONTENT */}
         <div className="relative z-10 grid items-center gap-16 lg:grid-cols-2">
@@ -33,7 +56,7 @@ export default function PricingSection() {
           <div className="max-w-[520px]">
             
             {/* HEADING */}
-            <h2 className="text-[48px] font-medium leading-[0.98] tracking-[-0.05em] text-black md:text-[72px]">
+            <h2 className="text-[48px] font-medium leading-[0.98] tracking-[-0.05em] text-black md:text-[50px]">
               Performance-based,
               <br />
               built for growth.

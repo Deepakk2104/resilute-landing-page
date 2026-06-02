@@ -9,7 +9,7 @@ export default function Hero() {
     >
       {/* FIGMA BACKGROUND */}
       <Image
-        src="/images/hero-bg.png"
+        src="/images/hero-bg1.png"
         alt=""
         fill
         priority
