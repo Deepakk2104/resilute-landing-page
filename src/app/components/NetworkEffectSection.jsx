@@ -17,7 +17,7 @@ const cards = [
     featured: true,
   },
   {
-    icon: "/images/iconw1.png",
+    icon: "/images/why56.png",
     title: "The network compounds",
     desc: "The more you participate, the more valuable your reputation becomes.",
   },
