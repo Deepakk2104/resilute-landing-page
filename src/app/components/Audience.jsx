@@ -142,115 +142,116 @@ export default function Audience() {
   }}
 >
   {/* PURPLE BASE */}
-<div
-  className="absolute inset-0"
-  style={{
-    background: "#B557FA",
-    opacity: 0.18,
-  }}
-/>
-
-{/* LARGE PURPLE GLOW */}
-<div
-  className="absolute pointer-events-none"
-  style={{
-    width: "520px",
-    height: "520px",
-    left: "-110px",
-    top: "-130px",
-    background: "#B557FA",
-    filter: "blur(128px)",
-    opacity: 0.55,
-  }}
-/>
-
-{/* CENTER WHITE GLOW */}
-<div
-  className="absolute pointer-events-none"
-  style={{
-    width: "420px",
-    height: "420px",
-    left: "80px",
-    top: "20px",
-    background: "#FFFFFF",
-    filter: "blur(50px)",
-    opacity: 0.9,
-  }}
-/>
-
-{/* BOTTOM RIGHT BLUE GLOW */}
-<div
-  className="absolute pointer-events-none"
-  style={{
-    width: "384px",
-    height: "215px",
-    left: "365px",
-    top: "277px",
-    background: "#2350AD",
-    filter: "blur(90px)",
-  }}
-/>
-
-{/* TOP LEFT BLUE GLOW */}
-<div
-  className="absolute pointer-events-none"
-  style={{
-    width: "384px",
-    height: "215px",
-    left: "-138px",
-    top: "-108px",
-    background: "#2350AD",
-    filter: "blur(90px)",
-  }}
-/>
-    
-      
-      
-      {/* Content Layer */}
-      <div className="relative z-10 flex flex-col h-full justify-between items-start">
-        
-        {/* Top Content Block */}
-        <div className="w-full">
-          {/* Subtitle */}
-         <p className="text-[12px] font-semibold uppercase tracking-[1.44px] text-white">
-  FOR MERCHANTS
-</p>
-          
-          {/* Icon Box */}
-          <div className="mt-5">
-  <img
-    src="/images/cfc.png"
-    alt="Merchant"
-    className="h-[84px] w-[84px] object-contain"
+  <div
+    className="absolute inset-0"
+    style={{
+      background: "#B557FA",
+      opacity: 0.18,
+    }}
   />
-</div>
 
-          {/* Heading */}
-          <h3 className="mt-7 font-bold text-[28px] text-black max-w-[420px] tracking-[-0.5px] leading-[34px]">
-            Prove your marketing is working.
-          </h3>
-
-          {/* Paragraph */}
-          <p className="mt-3 text-[16px] text-[#4b5563] font-medium max-w-[400px] leading-[26px]">
-            Track verified footfall, confirmed purchases, and real customer engagement.
-          </p>
-        </div>
-
-        {/* Action Button */}
-       <button
-  type="button"
-  className="group mt-8 flex items-center justify-center gap-[8px] bg-gradient-to-r from-[#1d4ed8] to-[#60a5fa] rounded-[14px] w-full h-[54px] shadow-md shadow-blue-600/20 text-white font-medium text-[16px] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:brightness-110 hover:shadow-lg hover:shadow-blue-500/30 active:scale-[0.99]"
->
-  <span>Explore merchant tools</span>
-  <ArrowRight
-    size={18}
-    strokeWidth={2.5}
-    className="transition-transform duration-300 group-hover:translate-x-1"
+  {/* LARGE PURPLE GLOW */}
+  <div
+    className="absolute pointer-events-none"
+    style={{
+      width: "520px",
+      height: "520px",
+      left: "-110px",
+      top: "-130px",
+      background: "#B557FA",
+      filter: "blur(128px)",
+      opacity: 0.55,
+    }}
   />
-</button>
-        
+
+  {/* CENTER WHITE GLOW */}
+  <div
+    className="absolute pointer-events-none"
+    style={{
+      width: "420px",
+      height: "420px",
+      left: "80px",
+      top: "20px",
+      background: "#FFFFFF",
+      filter: "blur(50px)",
+      opacity: 0.9,
+    }}
+  />
+
+  {/* BOTTOM RIGHT BLUE GLOW */}
+  <div
+    className="absolute pointer-events-none"
+    style={{
+      width: "384px",
+      height: "215px",
+      left: "365px",
+      top: "277px",
+      background: "#2350AD",
+      filter: "blur(90px)",
+    }}
+  />
+
+  {/* TOP LEFT BLUE GLOW */}
+  <div
+    className="absolute pointer-events-none"
+    style={{
+      width: "384px",
+      height: "215px",
+      left: "-138px",
+      top: "-108px",
+      background: "#2350AD",
+      filter: "blur(90px)",
+    }}
+  />
+
+  {/* Content Layer */}
+  <div className="relative z-10 flex flex-col h-full justify-between items-start">
+
+    {/* Top Content Block */}
+    <div className="w-full">
+      {/* Subtitle */}
+      <p className="text-[12px] font-semibold uppercase tracking-[1.44px] text-white">
+        FOR MERCHANTS
+      </p>
+
+      {/* Icon Box */}
+      <div className="mt-5">
+        <img
+          src="/images/cfc.png"
+          alt="Merchant"
+          className="h-[84px] w-[84px] object-contain"
+        />
       </div>
-    </article>
+
+      {/* Heading */}
+      <h3 className="mt-7 font-bold text-[28px] text-black max-w-[420px] tracking-[-0.5px] leading-[34px]">
+        Prove your marketing is working.
+      </h3>
+
+      {/* Paragraph */}
+      <p className="mt-3 text-[16px] text-[#4b5563] font-medium max-w-[400px] leading-[26px]">
+        Track verified footfall, confirmed purchases, and real customer engagement.
+      </p>
+    </div>
+
+    {/* Action Button */}
+    <button
+      type="button"
+      className="group mt-8 flex items-center justify-center gap-[8px] rounded-[14px] w-full h-[54px] shadow-md shadow-blue-600/20 text-white font-medium text-[16px] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:brightness-110 hover:shadow-lg hover:shadow-blue-500/30 active:scale-[0.99]"
+      style={{
+        background: "linear-gradient(90.76deg, #2350AD 0.11%, #719AEF 99.89%)",
+      }}
+    >
+      <span>Explore merchant tools</span>
+      <ArrowRight
+        size={18}
+        strokeWidth={2.5}
+        className="transition-transform duration-300 group-hover:translate-x-1"
+      />
+    </button>
+
+  </div>
+</article>
 
           </div>
 
