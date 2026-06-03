@@ -19,16 +19,16 @@ export default function BuildTrust() {
 
           {/* TEXT OVERLAY */}
           <div className="absolute inset-0 flex items-center">
-            <div className="ml-[53%] max-w-[440px]">
+            <div className="ml-[53%] max-w-[640px]">
 
-              <h2 className="leading-[0.9] tracking-[-0.065em]">
+             <h2 className="leading-[0.92] tracking-[-0.065em]">
   <span className="bg-[linear-gradient(90deg,#1F1F1F_0%,#6E6E6E_100%)] bg-clip-text text-[68px] font-medium text-transparent">
     Build trust from
   </span>
 
   <br />
 
-  <span className="bg-[linear-gradient(90deg,#4F76DA_0%,#2F5FC8_100%)] bg-clip-text text-[68px] font-medium text-transparent">
+  <span className="bg-[linear-gradient(90deg,#4F76DA_0%,#2F5FC8_100%)] bg-clip-text text-[72px] font-medium text-transparent">
     real world activity
   </span>
 </h2>
