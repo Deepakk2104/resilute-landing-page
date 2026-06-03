@@ -54,77 +54,74 @@ export default function RewardsSection() {
         </div>
 
         {/* MAIN CONTENT */}
-        <div className="relative z-10 mt-20 grid items-center gap-10 lg:grid-cols-[1fr_700px_1fr]">
-          
-          {/* LEFT CARD */}
-          <div className="mx-auto max-w-[360px] text-center lg:mx-0 lg:text-left">
-            
-            {/* ICON */}
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-[#dfe3ee] bg-white text-[#4D73E6] shadow-sm">
-              <FaUser />
-            </div>
+        {/* MAIN CONTENT */}
+{/* MAIN CONTENT */}
+<div className="relative z-10 mt-20">
 
-            {/* TITLE */}
-            <h3 className="mt-8 text-[28px] font-semibold leading-[1.05] text-black md:text-[34px] lg:text-[42px]">
-              The Customer
-            </h3>
+  {/* CENTER ROBOT — full width, sits behind */}
+  <div className="relative flex justify-center">
+    <div className="absolute bottom-10 h-[340px] w-[340px] rounded-full bg-[#7c8cff]/20 blur-[100px]" />
+    <Image
+      src="/images/rewards-robot.png"
+      alt="Rewards Robot"
+      width={1000}
+      height={1200}
+      className="
+        relative
+        w-full
+        max-w-[500px]
+        sm:max-w-[600px]
+        lg:max-w-[700px]
+        xl:max-w-[800px]
+        object-contain
+      "
+      priority
+    />
+  </div>
 
-            {/* TEXT */}
-           <p className="mt-5 text-[16px] leading-relaxed text-[#666] md:text-[18px] lg:text-[22px]">
-              Earns points toward their reputation profile and
-              airdrop allocation. Consistent, genuine visits
-              compound in value. Reputation is portable across
-              every Resilute merchant.
-            </p>
-          </div>
+  {/* TEXT COLUMNS — pulled up over the robot with negative margin */}
+  <div className="
+    absolute inset-0
+    flex items-center justify-between
+    px-4 lg:px-8
+    pointer-events-none
+  ">
 
-          {/* CENTER IMAGE */}
-          <div className="relative flex justify-center">
-            
-            {/* GLOW */}
-            <div className="absolute bottom-10 h-[340px] w-[340px] rounded-full bg-[#7c8cff]/20 blur-[100px]" />
+    {/* LEFT */}
+    <div className="pointer-events-auto max-w-[260px] xl:max-w-[300px] mb-52">
+      <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-[#dfe3ee] bg-white text-[#4D73E6] shadow-sm">
+        <FaUser />
+      </div>
+      <h3 className="mt-8 text-[28px] font-semibold leading-[1.05] text-black md:text-[34px]">
+        The Customer
+      </h3>
+      <p className="mt-5 text-[16px] leading-relaxed text-[#666] md:text-[18px]">
+        Earns points toward their reputation profile and
+        airdrop allocation. Consistent, genuine visits
+        compound in value. Reputation is portable across
+        every Resilute merchant.
+      </p>
+    </div>
 
-           <Image
-  src="/images/rewards-robot.png"
-  alt="Rewards Robot"
-  width={760}
-  height={900}
-  className="
-    relative z-10
-    w-full
-    max-w-[320px]
-    sm:max-w-[450px]
-    md:max-w-[600px]
-    lg:max-w-[760px]
-    object-contain
-  "
-  priority
-/>
-          </div>
+    {/* RIGHT */}
+    <div className="pointer-events-auto max-w-[260px] xl:max-w-[300px] text-left mb-52">
+      <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-[#dfe3ee] bg-white text-[#4D73E6] shadow-sm">
+        <FaStore />
+      </div>
+      <h3 className="mt-8 text-[28px] font-semibold leading-[1.05] text-black md:text-[34px]">
+        The Business
+      </h3>
+      <p className="mt-5 text-[16px] leading-relaxed text-[#666] md:text-[18px]">
+        Accrues airdrop points proportional to the
+        verified activity their location generates.
+        The more genuine participation they host,
+        the greater their share of the network&apos;s
+        long-term upside.
+      </p>
+    </div>
 
-          {/* RIGHT CARD */}
-         <div className="mx-auto max-w-[360px] text-center lg:mx-0 lg:justify-self-end lg:text-left">
-            
-            {/* ICON */}
-            <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-[#dfe3ee] bg-white text-[#4D73E6] shadow-sm">
-              <FaStore />
-            </div>
-
-            {/* TITLE */}
-           <h3 className="mt-8 text-[28px] font-semibold leading-[1.05] text-black md:text-[34px] lg:text-[42px]">
-              The Business
-            </h3>
-
-            {/* TEXT */}
-            <p className="mt-5 text-[16px] leading-relaxed text-[#666] md:text-[18px] lg:text-[22px]">
-              Accrues airdrop points proportional to the
-              verified activity their location generates.
-              The more genuine participation they host,
-              the greater their share of the network&apos;s
-              long-term upside
-            </p>
-          </div>
-        </div>
+  </div>
+</div>
       </div>
     </section>
   );

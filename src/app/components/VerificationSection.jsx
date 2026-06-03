@@ -27,7 +27,7 @@ export default function VerificationSection() {
   return (
     <section className="px-4 py-10">
       
-      <div className="mx-auto grid max-w-[1500px] items-center gap-16 rounded-[40px] bg-[#f7f8fb] px-8 py-16 lg:grid-cols-2 lg:px-14">
+      <div className="mx-auto grid max-w-[1500px] items-start gap-16 rounded-[40px] bg-[#f7f8fb] px-8 py-16 lg:grid-cols-2 lg:px-14">
         
         {/* LEFT SIDE */}
         <div>
@@ -83,13 +83,26 @@ export default function VerificationSection() {
 
         {/* RIGHT SIDE */}
         {/* RIGHT SIDE */}
-<div className="relative flex justify-center">
-  
-  {/* MAIN PANEL */}
-  <div className="relative flex w-full max-w-[540px] flex-col items-center rounded-[40px] bg-white p-12 shadow-[0_30px_80px_rgba(0,0,0,0.08)]">
+<div className="relative flex justify-center lg:justify-end lg:pt-2 mt-6">
+  <div
+    className="
+      relative
+      flex
+      w-full
+      max-w-[600px]
+      flex-col
+      items-center
+      rounded-[40px]
+      bg-white
+      p-12
+      shadow-[0_30px_80px_rgba(0,0,0,0.08)]
+
+      lg:-translate-y-10
+    "
+  >
     
     {/* TOP CARD */}
-    <div className="flex w-full max-w-[480px] items-center justify-between rounded-[24px] bg-white px-8 py-6 shadow-[0_15px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
+    <div className="flex w-full max-w-[480px] items-center justify-between rounded-[24px] bg-white mt-18 px-6 py-6 shadow-[0_15px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
       
       <div className="flex items-center gap-5">
         <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#eefbf0] text-[#6ddc7d]">
@@ -101,11 +114,11 @@ export default function VerificationSection() {
         </div>
 
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#777]">
+          <p className="text-[9px] font-semibold uppercase tracking-[0.18em] text-[#777]">
             Final Validation
           </p>
 
-          <h4 className="mt-1 text-[18px] font-semibold text-black">
+          <h4 className="mt-1 text-[14px] font-semibold text-black">
             Verified Action
           </h4>
         </div>
@@ -117,7 +130,7 @@ export default function VerificationSection() {
     </div>
 
     {/* CENTER CARD */}
-    <div className="mt-12 flex w-full max-w-[480px] items-center justify-between rounded-[24px] bg-white px-8 py-6 shadow-[0_15px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
+    <div className="mt-12 flex w-full max-w-[480px] items-center justify-between rounded-[24px] bg-white mt-16 px-6 py-6 shadow-[0_15px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
       
       <div className="flex items-center gap-5">
         <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#eef8ff] text-[#4D73E6]">
@@ -129,11 +142,11 @@ export default function VerificationSection() {
         </div>
 
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#777]">
+          <p className="text-[9px] font-semibold uppercase tracking-[0.18em] text-[#777]">
             Hardware Handshake
           </p>
 
-          <h4 className="mt-1 text-[18px] font-semibold text-black">
+          <h4 className="mt-1 text-[14px] font-semibold text-black">
             Bluetooth / NaC
           </h4>
         </div>
@@ -145,7 +158,7 @@ export default function VerificationSection() {
     </div>
 
     {/* BOTTOM CARD */}
-    <div className="mt-12 flex w-full max-w-[480px] items-center justify-between rounded-[24px] bg-white px-8 py-6 shadow-[0_15px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
+    <div className="mt-12 flex w-full max-w-[480px] items-center justify-between rounded-[24px] bg-white mt-18 mb-18 px-6 py-6 shadow-[0_15px_40px_rgba(0,0,0,0.08)] transition-all duration-300 hover:-translate-y-1">
       
       <div className="flex items-center gap-5">
         <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-[#eef2ff] text-[#4D73E6]">
@@ -157,11 +170,11 @@ export default function VerificationSection() {
         </div>
 
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#777]">
+          <p className="text-[9px] font-semibold uppercase tracking-[0.18em] text-[#777]">
             Global Positioning
           </p>
 
-          <h4 className="mt-1 text-[18px] font-semibold text-black">
+          <h4 className="mt-1 text-[14px] font-semibold text-black">
             GPS Signal
           </h4>
         </div>

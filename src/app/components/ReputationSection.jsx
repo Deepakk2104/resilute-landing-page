@@ -72,11 +72,11 @@ export default function ReputationSection() {
 />
 
         {/* CONTENT */}
-        <div className="relative z-10 grid items-center gap-16 lg:grid-cols-2">
+        <div className="relative z-10 grid gap-16 lg:grid-cols-[1.7fr_1fr]">
           
           {/* LEFT SIDE */}
           {/* LEFT SIDE */}
-<div className="flex flex-col gap-6 lg:flex-row lg:items-stretch">
+<div className="flex flex-col gap-6 mt-20 lg:flex-row lg:items-stretch">
 
   {/* CARD 1 */}
   <div className="flex h-[500px] flex-1 flex-col rounded-[34px] bg-white p-8 shadow-[0_20px_60px_rgba(0,0,0,0.06)] transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_30px_80px_rgba(90,124,235,0.12)]">
@@ -94,7 +94,7 @@ export default function ReputationSection() {
     </div>
 
     {/* TITLE */}
-    <h3 className="mt-8 text-[32px] font-semibold leading-[1.15] text-black">
+    <h3 className="mt-8 text-[25px] font-semibold leading-[1.15] text-black">
       New user
     </h3>
 
@@ -155,7 +155,7 @@ export default function ReputationSection() {
     </div>
 
     {/* TITLE */}
-    <h3 className="mt-8 text-[32px] font-semibold leading-[1.15] text-black">
+    <h3 className="mt-8 text-[25px] font-semibold leading-[1.15] text-black">
       Active participant
     </h3>
 
