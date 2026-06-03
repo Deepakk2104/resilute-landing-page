@@ -7,7 +7,7 @@ import {
 
 const problems = [
   {
-    icon: "/images/icon.png",
+    icon: "/images/why1.png",
     title: "Loyalty programs no one uses",
     desc: "Most customers forget or ignore them. There’s no lasting value.",
   },
