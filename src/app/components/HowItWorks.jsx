@@ -64,21 +64,22 @@ export default function HowItWorks() {
       <div className="section-container relative z-10 grid items-start gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
         
         {/* LEFT */}
-        <div className="max-w-[680px] lg:pt-6">
-          <h2
-            className="
-              text-[30px]
-              font-medium
-              leading-[0.95]
-              tracking-[-0.05em]
-              text-black
-              md:text-[38px]
-              lg:text-[42px]
-            "
-          >
-            The infrastructure for real world   
-            <br /> reputation
-          </h2>
+       <div className="max-w-[800px] lg:pt-6">
+  <h2
+    className="
+      text-[30px]
+      font-medium
+      leading-[0.95]
+      tracking-[-0.05em]
+      text-black
+
+      md:text-[38px]
+      lg:text-[40px]
+      xl:text-[42px]
+    "
+  >
+    The infrastructure for real world reputation
+  </h2>
 
           <p className="mt-4 text-[15px] leading-relaxed text-[#666666]">
             Turn real-world activity into trusted reputation

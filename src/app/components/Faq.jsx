@@ -89,9 +89,21 @@ export default function Faq() {
         </div>
 
         <div>
-         <h2 className="text-[28px] font-medium leading-tight text-black sm:text-[32px] md:text-[40px] lg:text-[44px]">
-            Frequently asked questions
-          </h2>
+       <h2
+  className="
+    text-[28px]
+    font-medium
+    leading-tight
+    text-black
+
+    sm:text-[32px]
+    md:text-[36px]
+    lg:text-[40px]
+    xl:text-[42px]
+  "
+>
+  Frequently asked questions
+</h2>
 
           <div className="mt-8 flex flex-col gap-4 md:mt-15 md:gap-5">
             {faqs.map((faq, index) => {

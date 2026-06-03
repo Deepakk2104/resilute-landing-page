@@ -77,9 +77,20 @@ export default function ProblemSection() {
           {/* TOP */}
           <div className="mx-auto max-w-[950px] text-center">
             
-            <h2 className="text-[42px] font-medium leading-[1] tracking-[-0.05em] text-black md:text-[64px]">
-              The problem we’re solving
-            </h2>
+           <h2
+  className="
+    text-[48px]
+    font-medium
+    leading-[1]
+    tracking-[-0.05em]
+    text-black
+
+    md:text-[50px]
+    lg:text-[48px]
+  "
+>
+  The problem we’re solving
+</h2>
 
             <p className="mx-auto mt-6 max-w-[850px] text-[18px] leading-relaxed text-[#666]">
               Today’s systems don’t prove real-world engagement.

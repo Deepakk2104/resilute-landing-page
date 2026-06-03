@@ -85,7 +85,7 @@ export default function WhyNowSection() {
           <div className="max-w-[620px]">
             
             {/* HEADING */}
-            <h2 className="text-[52px] font-medium leading-[0.96] tracking-[-0.05em] text-black md:text-[72px]">
+            <h2 className="text-[52px] font-medium leading-[0.96] tracking-[-0.05em] text-black md:text-[48px]">
               Why now
             </h2>
 

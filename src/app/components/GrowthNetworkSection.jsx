@@ -63,10 +63,10 @@ export default function GrowthNetworkSection() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="max-w-[620px]">
+          <div className="max-w-[820px]">
             
             {/* HEADING */}
-            <h2 className="text-[46px] font-medium leading-[0.95] tracking-[-0.05em] text-black md:text-[52px]">
+            <h2 className="text-[46px] font-medium leading-[0.95] tracking-[-0.05em] text-black md:text-[42px]">
               A network that grows with every real interaction
             </h2>
 
