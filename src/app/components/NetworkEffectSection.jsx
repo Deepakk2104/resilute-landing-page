@@ -6,12 +6,12 @@ import { HiMiniSparkles } from "react-icons/hi2";
 
 const cards = [
   {
-    icon: "/images/iconw.png",
+    icon: "/images/why78.png",
     title: "More merchants join",
     desc: "Each new location increases the value of the network.",
   },
   {
-    icon: "/images/iconw2.png",
+    icon: "/images/why79.png",
     title: "More users participate",
     desc: "Verified activity grows, strengthening the data layer.",
     featured: true,

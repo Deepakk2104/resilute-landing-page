@@ -12,17 +12,17 @@ const problems = [
     desc: "Most customers forget or ignore them. There’s no lasting value.",
   },
   {
-    icon: "/images/icon2.png",
+    icon: "/images/why2.png",
     title: "Marketing with no proof",
     desc: "Businesses spend money without knowing what actually drives visits.",
   },
   {
-    icon: "/images/icon3.png",
+    icon: "/images/why3.png",
     title: "Fake check-ins",
     desc: "Location systems can be spoofed, creating false engagement.",
   },
   {
-    icon: "/images/icon4.png",
+    icon: "/images/why4.png",
     title: "No verified real-world data",
     desc: "There’s no reliable way to prove real customer activity.",
   },
@@ -143,7 +143,7 @@ export default function ProblemSection() {
                 
                 <div className="flex h-12 w-12 items-center justify-center">
   <img
-    src="/images/iconsh.png"
+    src="/images/whyhx.png"
     alt="Shield"
     className="h-12 w-12 object-contain"
   />
