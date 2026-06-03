@@ -89,7 +89,7 @@ export default function Faq() {
         </div>
 
         <div>
-          <h2 className="text-[32px] font-medium leading-tight md:mt-25 text-black md:text-[40px] lg:text-[44px]">
+         <h2 className="text-[28px] font-medium leading-tight text-black sm:text-[32px] md:text-[40px] lg:text-[44px]">
             Frequently asked questions
           </h2>
 
