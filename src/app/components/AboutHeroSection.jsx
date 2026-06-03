@@ -31,7 +31,7 @@ export default function AboutHeroSection() {
 
           {/* LABEL */}
           <p className="flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.18em] text-[#111111]">
-            <span className="text-[#4D73E6]"><img src="/images/vector.png"/></span>
+            <span className="text-[#4D73E6]"><img src="/images/zoro.png"/></span>
             ABOUT RESILUTE
           </p>
 
