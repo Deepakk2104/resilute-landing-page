@@ -1,4 +1,5 @@
 import { ArrowRight, Check, Store, User } from "lucide-react";
+import Image from "next/image";
 
 const bottomFeatures = [
   {
@@ -135,13 +136,12 @@ export default function Audience() {
             </article>
 
             {/* SECOND CARD: MERCHANTS (Parity Layout with Inter font updates) */}
-        <article
+      {/*  <article
   className="relative overflow-hidden rounded-[16px] p-10 flex flex-col justify-between w-full max-w-[522px] min-h-[443px]"
   style={{
     background: "#F8F4FF",
   }}
 >
-  {/* PURPLE BASE */}
   <div
     className="absolute inset-0"
     style={{
@@ -150,7 +150,7 @@ export default function Audience() {
     }}
   />
 
-  {/* LARGE PURPLE GLOW */}
+  
   <div
     className="absolute pointer-events-none"
     style={{
@@ -164,7 +164,7 @@ export default function Audience() {
     }}
   />
 
-  {/* CENTER WHITE GLOW */}
+
   <div
     className="absolute pointer-events-none"
     style={{
@@ -178,7 +178,6 @@ export default function Audience() {
     }}
   />
 
-  {/* BOTTOM RIGHT BLUE GLOW */}
   <div
     className="absolute pointer-events-none"
     style={{
@@ -191,7 +190,7 @@ export default function Audience() {
     }}
   />
 
-  {/* TOP LEFT BLUE GLOW */}
+
   <div
     className="absolute pointer-events-none"
     style={{
@@ -203,18 +202,19 @@ export default function Audience() {
       filter: "blur(90px)",
     }}
   />
+  
 
-  {/* Content Layer */}
+ 
   <div className="relative z-10 flex flex-col h-full justify-between items-start">
 
-    {/* Top Content Block */}
+  
     <div className="w-full">
-      {/* Subtitle */}
+     
       <p className="text-[12px] font-semibold uppercase tracking-[1.44px] text-white">
         FOR MERCHANTS
       </p>
 
-      {/* Icon Box */}
+    
       <div className="mt-5">
         <img
           src="/images/cfc.png"
@@ -223,18 +223,17 @@ export default function Audience() {
         />
       </div>
 
-      {/* Heading */}
+    
       <h3 className="mt-7 font-bold text-[28px] text-black max-w-[420px] tracking-[-0.5px] leading-[34px]">
         Prove your marketing is working.
       </h3>
 
-      {/* Paragraph */}
+     
       <p className="mt-3 text-[16px] text-[#4b5563] font-medium max-w-[400px] leading-[26px]">
         Track verified footfall, confirmed purchases, and real customer engagement.
       </p>
     </div>
 
-    {/* Action Button */}
     <button
       type="button"
       className="group mt-8 flex items-center justify-center gap-[8px] rounded-[14px] w-full h-[54px] shadow-md shadow-blue-600/20 text-white font-medium text-[16px] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:brightness-110 hover:shadow-lg hover:shadow-blue-500/30 active:scale-[0.99]"
@@ -243,6 +242,97 @@ export default function Audience() {
       }}
     >
       <span>Explore merchant tools</span>
+      <ArrowRight
+        size={18}
+        strokeWidth={2.5}
+        className="transition-transform duration-300 group-hover:translate-x-1"
+      />
+    </button>
+
+  </div>
+</article> */}
+<article className="relative overflow-hidden rounded-[16px] w-full max-w-[522px] min-h-[443px]">
+
+  {/* BACKGROUND PNG */}
+  <Image
+    src="/images/card.png"
+    alt=""
+    fill
+    className="object-cover"
+  />
+
+  {/* CONTENT */}
+  <div className="relative z-10 flex h-full min-h-[443px] flex-col justify-between p-10">
+
+    {/* TOP CONTENT */}
+    <div>
+
+      {/* SUBTITLE */}
+      <p className="text-[12px] font-semibold uppercase tracking-[1.44px] text-white">
+        FOR MERCHANTS
+      </p>
+
+      {/* ICON */}
+      <div className="mt-5">
+        <img
+          src="/images/cfc.png"
+          alt="Merchant"
+          className="h-[84px] w-[84px] object-contain"
+        />
+      </div>
+
+      {/* HEADING */}
+      <h3 className="mt-7 max-w-[420px] text-[28px] font-bold leading-[34px] tracking-[-0.5px] text-black">
+        Prove your marketing is working.
+      </h3>
+
+      {/* DESCRIPTION */}
+      <p className="mt-3 max-w-[400px] text-[16px] font-medium leading-[26px] text-[#4B5563]">
+        Track verified footfall, confirmed purchases, and real customer
+        engagement.
+      </p>
+
+    </div>
+
+    {/* BUTTON */}
+    <button
+      type="button"
+      className="
+        group
+        mt-8
+        flex
+        h-[54px]
+        w-full
+        items-center
+        justify-center
+        gap-2
+        rounded-[14px]
+
+        text-[16px]
+        font-medium
+        text-white
+
+        shadow-md
+        shadow-blue-600/20
+
+        transition-all
+        duration-300
+
+        hover:-translate-y-1
+        hover:scale-[1.02]
+        hover:brightness-110
+        hover:shadow-lg
+        hover:shadow-blue-500/30
+
+        active:scale-[0.99]
+      "
+      style={{
+        background:
+          "linear-gradient(90.76deg,#2350AD 0.11%,#719AEF 99.89%)",
+      }}
+    >
+      <span>Explore merchant tools</span>
+
       <ArrowRight
         size={18}
         strokeWidth={2.5}

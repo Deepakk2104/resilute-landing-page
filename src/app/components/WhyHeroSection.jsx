@@ -18,7 +18,7 @@ export default function WhyHeroSection() {
           </p>
 
           {/* HEADING */}
-         <h1 className="mt-10 text-[62px] font-medium leading-[1.05] tracking-[-0.06em] text-black md:text-[116px]">
+         <h1 className="mt-10 text-[62px] font-medium leading-[1.05] tracking-[-0.06em] text-black md:text-[100px]">
   Physical trust is broken
 
   <span
