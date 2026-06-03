@@ -86,24 +86,28 @@ export default function MissionSection() {
           <div className="mx-auto mt-20 grid max-w-[1450px] gap-6 lg:grid-cols-2">
             {cards.map((card, index) => (
               <div
-                key={index}
-                className="
-                  rounded-[28px]
-                  bg-white
-                  px-9
-                  pt-16
-                  pb-5
-                  min-h-[420px]
+  key={index}
+  className="
+    flex
+    min-h-[420px]
+    flex-col
 
-                  shadow-[0_8px_30px_rgba(0,0,0,0.04)]
+    rounded-[28px]
+    bg-white
 
-                  transition-all
-                  duration-300
+    px-9
+    pt-16
+    pb-5
 
-                  hover:-translate-y-1
-                  hover:shadow-[0_12px_40px_rgba(77,115,230,0.08)]
-                "
-              >
+    shadow-[0_8px_30px_rgba(0,0,0,0.04)]
+
+    transition-all
+    duration-300
+
+    hover:-translate-y-1
+    hover:shadow-[0_12px_40px_rgba(77,115,230,0.08)]
+  "
+>
                 {/* ICON */}
                 <div
                   className="
@@ -151,35 +155,41 @@ export default function MissionSection() {
                 </h3>
 
                 {/* DESCRIPTION */}
-                <p
-                  className="
-                    mt-8
-                    max-w-[700px]
-                    text-[16px]
-                    leading-[1.55]
-                    text-[#666666]
-                  "
-                >
-                  {card.desc}
-                </p>
+                {/* DESCRIPTION */}
+{/* DESCRIPTION */}
+<p
+  className="
+    mt-8
+    max-w-[700px]
+    text-[16px]
+    leading-[1.55]
+    text-[#666666]
+  "
+>
+  {card.desc}
+</p>
 
-                {/* DIVIDER */}
-                <div className="mt-14 h-px w-full bg-[#ECECEC]" />
+{/* PUSHES FOOTER TO BOTTOM */}
+<div className="flex-1" />
 
-                {/* BUTTON */}
-                <button
-                  className="
-                    mt-8
-                    text-[15px]
-                    font-semibold
-                    text-[#2D5BDB]
-                    transition-all
-                    duration-300
-                    hover:translate-x-1
-                  "
-                >
-                  {card.button} →
-                </button>
+{/* DIVIDER */}
+<div className="mt-10 h-px w-full bg-[#ECECEC]" />
+
+{/* BUTTON */}
+<div className="mt-8">
+  <button
+    className="
+      text-[15px]
+      font-semibold
+      text-[#2D5BDB]
+      transition-all
+      duration-300
+      hover:translate-x-1
+    "
+  >
+    {card.button} →
+  </button>
+</div>
               </div>
             ))}
           </div>

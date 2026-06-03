@@ -19,7 +19,7 @@ export default function InfrastructureSection() {
         {/* CONTENT */}
         <div className="absolute inset-0">
 
-          <div className="absolute right-[14%] top-[16%] max-w-[520px]">
+          <div className="absolute right-[8%] top-[16%] max-w-[520px]">
 
             {/* HEADING */}
             <h2 className="leading-[1.3] tracking-[-0.06em]">

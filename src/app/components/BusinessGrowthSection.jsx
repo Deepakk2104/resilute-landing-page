@@ -44,12 +44,13 @@ export default function BusinessGrowthSection() {
 </h2>
 
           {/* BUTTON */}
-         <div className="mt-6 md:mt-8">
+        {/* BUTTON */}
+<div className="relative z-20 mt-4 md:mt-0 mb-8">
   <JoinWaitlistButton />
 </div>
 
-          {/* ROBOT */}
-          <div
+{/* ROBOT */}
+<div
   className="
     absolute
     left-1/2
@@ -59,12 +60,14 @@ export default function BusinessGrowthSection() {
     bottom-[-30px]
     sm:bottom-[-50px]
     md:bottom-[-70px]
-    lg:bottom-[-110px]
+    lg:bottom-[-90px]
+    xl:bottom-[-110px]
 
     w-[420px]
     sm:w-[600px]
     md:w-[760px]
-    lg:w-[1050px]
+    lg:w-[900px]
+    xl:w-[1050px]
   "
 >
   <Image

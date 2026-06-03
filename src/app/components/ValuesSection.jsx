@@ -59,6 +59,29 @@ export default function ValuesSection() {
             }}
           />
         </div>
+        {/* TOP RIGHT BLUE GRADIENT */}
+<div
+  className="absolute right-[-140px] top-[-140px]"
+  style={{
+    width: "374px",
+    height: "374px",
+    background: "#7AA8FF",
+    filter: "blur(225px)",
+    opacity: 0.8,
+  }}
+/>
+
+{/* TOP RIGHT PURPLE GRADIENT */}
+<div
+  className="absolute right-[-180px] top-[-20px]"
+  style={{
+    width: "530px",
+    height: "179px",
+    background: "#A39CEC",
+    filter: "blur(239.5px)",
+    opacity: 0.9,
+  }}
+/>
 
         {/* CONTENT */}
         <div className="relative z-10">

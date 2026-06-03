@@ -42,12 +42,14 @@ export default function BusinessWorkflowSection() {
         <div className="relative z-10 grid items-center gap-16 lg:grid-cols-2">
           
           {/* LEFT SIDE */}
-          <div className="max-w-[650px]">
+          <div className="max-w-[1000px]">
             
             {/* HEADING */}
-            <h2 className="text-[42px] font-medium leading-[1] tracking-[-0.05em] text-black md:text-[64px]">
-              How Resilute works for your business
-            </h2>
+            <h2 className="text-[42px] font-medium leading-[1] tracking-[-0.05em] text-black md:text-[40px]">
+  How Resilute works for your
+  <br />
+  business
+</h2>
 
             {/* DESCRIPTION */}
             <p className="mt-8 max-w-[620px] text-[18px] leading-relaxed text-[#666]">
@@ -88,7 +90,7 @@ export default function BusinessWorkflowSection() {
           <div className="relative flex justify-center">
             
             {/* IMAGE CONTAINER */}
-            <div className="relative w-full max-w-[760px]">
+            <div className="relative w-full mt-42 max-w-[760px]">
               
               {/* SOFT GLOW */}
               <div className="absolute inset-0 rounded-[40px] bg-cyan-200/20 blur-[80px]" />

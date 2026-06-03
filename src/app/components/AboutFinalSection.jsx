@@ -33,55 +33,46 @@ export default function AboutFinalSection() {
     {/* HEADING */}
     <h2 className="leading-[0.92] tracking-[-0.06em]">
 
-      <div
-        className="
-          text-[32px]
-          font-medium
-          text-[#2F2F2F]
+  <div
+    className="
+      text-[32px]
+      font-medium
 
-          sm:text-[40px]
-          md:text-[48px]
-          lg:text-[58px]
-        "
-      >
-        Build with
-      </div>
+      sm:text-[40px]
+      md:text-[48px]
+      lg:text-[58px]
+    "
+  >
+    <span className="text-[#2F2F2F]">Build with </span>
 
-      <div
-        className="
-          bg-[linear-gradient(90deg,#2F2F2F_0%,#8D8D8D_100%)]
-          bg-clip-text
-          text-[32px]
-          font-medium
-          text-transparent
-          leading-[0.92]
+    <span
+      className="
+        bg-[linear-gradient(90deg,#2F2F2F_0%,#8D8D8D_100%)]
+        bg-clip-text
+        text-transparent
+      "
+    >
+      real-world
+    </span>
+  </div>
 
-          sm:text-[40px]
-          md:text-[48px]
-          lg:text-[58px]
-        "
-      >
-        real-world
-      </div>
+  <div
+    className="
+      bg-[linear-gradient(90deg,#4D73E6_0%,#335FCB_55%,#4D73E6_100%)]
+      bg-clip-text
+      text-[32px]
+      font-medium
+      text-transparent
 
-      <div
-        className="
-          bg-[linear-gradient(90deg,#4D73E6_0%,#335FCB_55%,#4D73E6_100%)]
-          bg-clip-text
-          text-[32px]
-          font-medium
-          text-transparent
-          leading-[0.92]
+      sm:text-[40px]
+      md:text-[48px]
+      lg:text-[58px]
+    "
+  >
+    proof
+  </div>
 
-          sm:text-[40px]
-          md:text-[48px]
-          lg:text-[58px]
-        "
-      >
-        proof
-      </div>
-
-    </h2>
+</h2>
 
     {/* DESCRIPTION */}
     <p
