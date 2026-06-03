@@ -11,48 +11,61 @@ export default function Stats() {
       <div className="section-container">
         <div className="grid grid-cols-2 gap-4 md:gap-5 lg:grid-cols-4 lg:gap-6">
           {stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="
-                relative
-                h-[180px]
-                overflow-hidden
-                rounded-[20px]
-                bg-white
-                shadow-[0_10px_40px_rgba(0,0,0,0.03)]
-                transition-all
-                duration-300
-                hover:-translate-y-1
-                hover:shadow-[0_18px_50px_rgba(0,0,0,0.08)]
-              "
-            >
+  <div
+    key={stat.label}
+    className="
+      group
+      relative
+      h-[180px]
+      overflow-hidden
+      rounded-[20px]
+      bg-white
+      shadow-[0_10px_40px_rgba(0,0,0,0.03)]
+      transition-all
+      duration-300
+      hover:-translate-y-1
+      hover:shadow-[0_18px_50px_rgba(0,0,0,0.08)]
+    "
+  >
               {/* TOP RIGHT GLOW */}
-              <div
-                className="
-                  absolute
-                  right-[-110px]
-                  top-[-110px]
-                  h-[215px]
-                  w-[215px]
-                  rounded-full
-                  bg-[#2350AD]/25
-                  blur-[90px]
-                "
-              />
+<div
+  className="
+    absolute
+    right-[-110px]
+    top-[-110px]
+    h-[215px]
+    w-[215px]
+    rounded-full
+    bg-[#2350AD]/25
+    blur-[90px]
 
-              {/* BOTTOM LEFT GLOW */}
-              <div
-                className="
-                  absolute
-                  bottom-[-110px]
-                  left-[-110px]
-                  h-[215px]
-                  w-[215px]
-                  rounded-full
-                  bg-[#2350AD]/25
-                  blur-[90px]
-                "
-              />
+    transition-all
+    duration-300
+
+    group-hover:bg-[#2350AD]/50
+    group-hover:blur-[100px]
+  "
+/>
+
+{/* BOTTOM LEFT GLOW */}
+<div
+  className="
+    absolute
+    bottom-[-110px]
+    left-[-110px]
+    h-[215px]
+    w-[215px]
+    rounded-full
+    bg-[#2350AD]/25
+    blur-[90px]
+
+    transition-all
+    duration-300
+
+    group-hover:bg-[#2350AD]/50
+    group-hover:blur-[100px]
+  "
+/>
 
               {/* CONTENT */}
               <div className="relative z-10 flex h-full flex-col items-center justify-center">
